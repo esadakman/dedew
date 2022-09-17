@@ -1,12 +1,14 @@
 import React from 'react'
-import Landing from '../components/Landing'
+import Header from '../components/Header'
 import Navbar from '../components/Navbar'
+import News from '../components/News'
 
 const Home = () => {
   return (
     <div>
         <Navbar/>
-        <Landing/>
+        <Header/>
+        <News/>
     </div>
   )
 }

@@ -1,0 +1,17 @@
+.news-container{
+    /* width: 100vw; */
+    height: 100vh;
+    background-color: #0F0F0F;
+    /* border: 1px solid red; */
+     
+}
+
+
+.imageDiv{
+    margin: 1rem;
+}
+.content{
+    max-width: 30rem;
+    color: white;
+    text-align: justify;
+}
