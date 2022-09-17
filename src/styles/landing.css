@@ -1,0 +1,29 @@
+.header{
+    height: 88vh;
+    width: 100vw;
+    /* border: 1px solid red; */
+    background-color: #0F0F0F;
+    background-image: url('../assets/images/header_img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75% 85%; 
+    /* margin: auto auto; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.button-container{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    
+}
+.header-button{
+    border: 2px solid #d8d6d6;
+    border-radius: 1rem;
+    min-width: 10rem;
+    background-color: transparent;
+    color: #F5F5F5;
+    padding: .2rem .5rem ;
+}
