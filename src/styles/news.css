@@ -1,8 +1,6 @@
-.news-container{
-    /* width: 100vw; */
+.news-container{ 
     height: 100vh;
-    background-color: #0F0F0F;
-    /* border: 1px solid red; */
+    background-color: #0F0F0F; 
      
 }
 

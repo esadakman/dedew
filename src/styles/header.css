@@ -1,22 +1,15 @@
 .header{
     height: 88vh;
-    width: 100%;
-    /* border: 1px solid red; */
+    width: 100%; 
     background-color: #0F0F0F;
     background-image: url('../assets/images/header_img.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 75% 85%; 
-    /* margin: auto auto; */
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    background-size: 75% 85%;   
 }
 
-.button-container{
-    display: flex;
-    gap: 2rem;
-    margin-bottom: 2rem;
+.button-container{ 
+    gap: 2rem; 
     
 }
 .header-button{
