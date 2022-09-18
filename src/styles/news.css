@@ -1,15 +1,45 @@
-.news-container{ 
+.news-container {
     height: 100vh;
-    background-color: #0F0F0F; 
-     
+    background-color: #0F0F0F;
+
 }
 
-
-.imageDiv{
-    margin: 1rem;
+h1 {
+    /* margin: 0 !important;
+    padding: 0 !important;
+    border: 1px solid red; */
 }
-.content{
-    max-width: 30rem;
-    color: white;
-    text-align: justify;
+
+h4 {
+    /* font-weight: 400; */
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+
+.neon {
+    font-size: 30rem;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+    /* text-shadow:
+      0 0 5px #fff, 
+      0 0 20px #fff, 
+      0 0 90px #fff, 
+      0 0 150px #fff; */
+}
+
+@keyframes neon2 {
+    from {
+        text-shadow:
+            0 0 10px #fff,
+            0 0 20px #fff,
+            0 0 90px #fff,
+            0 0 100px #fff;
+    }
+
+    to {
+        text-shadow:
+            0 0 5px #fff,
+            0 0 30px #fff,
+            0 0 70px #fff,
+            0 0 130px #fff;
+    }
 }

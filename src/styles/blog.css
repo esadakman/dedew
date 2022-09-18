@@ -6,10 +6,13 @@
     display: flex !important;
     flex-direction: column !important;
 } 
+
+ 
+
 /* ! First Page */
 
 .news-container{ 
-    height: 75vh;
+    height: 80vh;
     background-color: #0F0F0F; 
     border: 1px solid red; 
 } 
@@ -104,3 +107,7 @@
     background-color: #0F0F0F;
     border: 1px solid blue;
 }
+
+/* .title-who{
+
+} */
