@@ -1,26 +1,26 @@
-.carousel{
+.carousel {
     height: 100vh;
-    background-color: #0F0F0F;
+    background-color: #060606;
 }
-.carousel-item{
+
+.carousel-item {
     display: flex !important;
     flex-direction: column !important;
-} 
-
- 
+}
 
 /* ! First Page */
 
-.news-container{ 
-    height: 80vh;
-    background-color: #0F0F0F; 
-    border: 1px solid red; 
-} 
+.news-container {
+    /* height: 80vh; */
+    background-color: #060606;
+    border: 1px solid yellow;
+}
 
-.imageDiv{
+.imageDiv {
     margin: 1rem;
 }
-.content{
+
+.content {
     max-width: 30rem;
     color: white;
     text-align: justify;
@@ -28,57 +28,59 @@
 
 /* ! Second PAge */
 
-.blog-container{
+.blog-container {
     width: 100%;
     height: 75vh;
-    background-color: #0F0F0F;
+    background-color: #060606;
     border: 1px solid blue;
 }
 
-.content-container{
+.content-container {
     width: 100%;
-    height: 100%; 
+    height: 100%;
 }
 
-.blog-left{
+.blog-left {
     width: 50%;
-    border: 1px solid red;
+    border: 1px solid green;
     position: relative;
     display: flex;
     height: 100%;
 }
 
-.circle_1{
+.circle_1 {
     width: 12rem;
     height: 12rem;
     border-radius: 50%;
     background: #626060;
     position: absolute;
-    left:20%;
-    top:14%;
-    
+    left: 20%;
+    top: 14%;
+
 }
-.circle_2{
+
+.circle_2 {
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
     background: #626060;
     position: absolute;
-    top:35%;
-    left:50%;
+    top: 35%;
+    left: 50%;
 }
-.circle_3{
+
+.circle_3 {
     width: 9rem;
     height: 9rem;
     border-radius: 50%;
     background: #626060;
     position: absolute;
-    top:60%;
-    left:27%;
+    top: 60%;
+    left: 27%;
 
 }
 
-.blog-right{
+.blog-right {
     width: 50%;
     border: 1px solid red;
     /* position: relative; */
@@ -88,26 +90,70 @@
     padding-top: 2rem;
 }
 
-.circle-up{
+.circle-up {
     width: 80%;
     height: 50%;
 }
-.circle-right{
+
+.circle-right {
     width: 12rem;
     height: 12rem;
     border-radius: 50%;
-    background: #626060; 
+    background: #626060;
 }
 
 /* ! Third Slide */
 
-.carou-container{
+.carou-container {
     width: 100%;
     height: 75vh;
-    background-color: #0F0F0F;
-    border: 1px solid blue;
+    background-color: #060606;
 }
 
-/* .title-who{
 
-} */
+/* ! Fourth Slide */
+
+.desc {
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+.pp {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+}
+
+/* ! fifth slide  */
+
+.social-icons {
+    height: 100%;
+    border: 1px solid red;
+}
+
+.links {
+    display: flex;
+    gap: 2rem;
+    font-size: 4rem;
+}
+
+.links>i {
+    background: white;
+    color: #060606;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.fa-discord {
+    font-size: 3.5rem;
+    padding: 1rem .8rem !important;
+}
+
+.fa-instagram {
+    padding: .9rem 1.2rem !important;
+}
+
+.fa-youtube {
+    padding: 1rem .8rem !important;
+}
