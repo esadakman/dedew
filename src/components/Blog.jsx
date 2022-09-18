@@ -101,12 +101,12 @@ const Blog = () => {
         {/* // ! Fifth Slide */}
 
         <Carousel.Item>
-          <div className="text-center pt-5 text-light h2">
+          <div className="text-center pt-5 text-light h2 ">
             <h2>CONTACT US</h2>
           </div>
           <div className="carou-container d-flex flex-column align-items-center text-light py-3 px-5">
-            <div className="social-icons  ">
-              <div className="links">
+            <div className="social-icons d-flex justify-content-center align-items-center">
+              <div className="links py-5">
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-youtube"></i>
                 <i class="fa-brands fa-twitter"></i>
@@ -114,11 +114,11 @@ const Blog = () => {
                 <i class="fa-brands fa-discord"></i>
                 <i class="fa-solid fa-envelope"></i>
               </div>
-              <p className="text-center mt-5">
+            </div>
+              <p className="text-center">
                 Copyright &#169;
                 {new Date().getFullYear()}. All rights reserved.
               </p>
-            </div>
           </div>
         </Carousel.Item>
       </Carousel>
