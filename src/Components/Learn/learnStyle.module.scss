@@ -1,0 +1,65 @@
+.container {
+  font-family: "Glacial-Indifference";
+  height: 100vh;
+  //   border: 1px solid yellow;
+  h2 {
+    font-size: 2.4rem;
+  }
+  .content {
+    // height: 100%;
+    height: calc(100% - 94.4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 3rem;
+    // border: 1px solid red;
+    h1 {
+      font-size: 3rem !important ;
+      margin-bottom: 8rem;
+    }
+    p {
+      font-size: 1.4rem;
+      letter-spacing: 2px;
+      text-align: justify;
+      width: 80%;
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+.hi-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  div {
+    & > h6 {
+      font-weight: lighter;
+      letter-spacing: 2px;
+      font-size: 1rem; 
+      font-family: "Glacial-Indifference";
+    }
+    .neon {
+      font-size: 25rem !important;
+      animation: neon2 1.5s ease-in-out infinite alternate;
+      font-weight: 500;
+      margin: 0;
+      /* text-shadow:
+                0 0 5px #fff,
+                0 0 20px #fff,
+                0 0 90px #fff,
+                0 0 150px #fff; */
+    }
+  }
+  @keyframes neon2 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 90px #fff, 0 0 100px #fff;
+    }
+
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 30px #fff, 0 0 70px #fff, 0 0 130px #fff;
+    }
+  }
+}
