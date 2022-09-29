@@ -1,3 +1,5 @@
+@import "../../scss/mixins", "../../scss/variables";
+
 .container {
   font-family: "Glacial-Indifference";
   height: 100vh;
@@ -39,7 +41,7 @@
       font-weight: lighter;
       letter-spacing: 2px;
       font-size: 1rem; 
-      font-family: "Glacial-Indifference";
+      font-family:$glacial-indiffrence;
     }
     .neon {
       font-size: 25rem !important;

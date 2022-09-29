@@ -1,3 +1,26 @@
+@import "../../scss/mixins", "../../scss/variables";
+
+.navbar-boot {
+  background-color: $backgroundColor;
+  // border: 1px solid red; 
+  text-transform: uppercase;
+  padding: 0 0.4rem;
+  font-family: $glacial-indiffrence;
+  letter-spacing: 2.3px; 
+  .navbar-toggler {
+    color: white;
+
+  } 
+  img {
+    width: 7rem;
+  }
+  .nav-link {
+    color: white !important;
+    
+  }
+   
+}
+
 // .header {
 //   display: flex;
 //   flex-direction: row;
@@ -53,23 +76,3 @@
 //     }
 //   }
 // }
-.navbar-boot {
-  background-color: #0f0f0f;
-  // border: 1px solid red; 
-  text-transform: uppercase;
-  padding: 0 0.4rem;
-  font-family: "Glacial-Indifference";
-  letter-spacing: 2.3px; 
-  .navbar-toggler {
-    color: white;
-
-  } 
-  img {
-    width: 7rem;
-  }
-  .nav-link {
-    color: white !important;
-    
-  }
-   
-}

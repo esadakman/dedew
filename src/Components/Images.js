@@ -7,6 +7,9 @@ import imgArt3 from "../assets/images/apes/3.jpg";
 import imgArt4 from "../assets/images/apes/4.jpg";
 import imgArt5 from "../assets/images/apes/5.jpg";
 import fingerPng from "../assets/images/intro/intro.png";
+import roadMapHorizontal from "../assets/images/roadmap/roadMapHorizontal.png";
+import roadMapVertical from "../assets/images/roadmap/roadMapVertical.png";
+
 
 // const SvgDownArrow = `<svg
 // width="1em"
@@ -1661,4 +1664,6 @@ export {
   imgArt4,
   imgArt5,
   fingerPng,
+  roadMapHorizontal,
+  roadMapVertical,
 };

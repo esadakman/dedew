@@ -7,6 +7,7 @@ import Learn from "./Components/Learn/Learn";
 import Faq from "./Components/Faq/Faq";
 import Art from "./Components/Art/Art";
 import CarouselSection from "./Components/Carousel/CarouselSection";
+import Roadmap from "./Components/Roadmap/Roadmap";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Faq />
       <Art />
       <Learn/>
+      <Roadmap/>
       <Contact/>
       <CarouselSection/>
     </div>

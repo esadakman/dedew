@@ -1,8 +1,9 @@
+@import "../../scss/mixins", "../../scss/variables";
 
 /* // ! First Page */
 .news-container {
-  background-color: #060606;
-  border: 1px solid yellow;
+  background-color: $backgroundColor;
+  // border: 1px solid yellow;
   .imageDiv {
     margin: 1rem;
   }
@@ -10,7 +11,7 @@
 
 .first-container {
   height: 100vh;
-  border: 1px solid yellow;
+  // border: 1px solid yellow;
   display: flex;
   // display: block;
   flex-direction: column;
@@ -18,7 +19,7 @@
   .first-content {
     height: calc(100% - 94.4px);
     padding: 2rem;
-    border: 1px solid red;
+    // border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,15 +41,15 @@
 
 .second-container {
   height: 100vh;
-  border: 1px solid yellow;
+  // border: 1px solid yellow;
   display: flex;
   flex-direction: column;
   align-items: center;
   .blog-container {
     width: 100%;
     height: calc(100% - 94.4px);
-    background-color: #060606;
-    border: 1px solid blue;
+    background-color: $backgroundColor;
+    // border: 1px solid blue;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,7 +59,7 @@
       display: flex;
       .blog-left {
         width: 50%;
-        /* border: 1px solid green; */
+        // /* border: 1px solid green; */
         position: relative;
         display: flex;
         justify-content: center;
@@ -96,7 +97,7 @@
       }
       .blog-right {
         width: 50%;
-        border: 1px solid red;
+        // border: 1px solid red;
         /* position: relative; */
         display: flex;
         flex-direction: column;
@@ -130,7 +131,7 @@
 
 .third-container {
   height: 100vh;
-  border: 1px solid yellow;
+  // border: 1px solid yellow;
   // display: flex;
   // display: block;
   flex-direction: column;
@@ -141,7 +142,7 @@
     align-items: center;
     flex-direction: column;
     padding: 2rem 3rem;
-    border: 1px solid red;
+    // border: 1px solid red;
     h1 {
       font-size: 2rem !important ;
     }
@@ -156,12 +157,12 @@
 
 .fourth-container {
   height: 100vh;
-  border: 1px solid yellow;
+  // border: 1px solid yellow;
 
   .fourth-content {
     height: calc(100% - 94.4px);
     display: flex;
-    border: 1px solid crimson;
+    // border: 1px solid crimson;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -186,11 +187,11 @@
 
 .fifth-container {
   height: 100vh;
-  border: 1px solid yellow;
+  // border: 1px solid yellow;
   .fifth-content {
     height: calc(100% - 94.4px);
     display: flex;
-    border: 1px solid crimson;
+    // border: 1px solid crimson;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -204,7 +205,7 @@
       text-align: center;
       & > i {
         background: white;
-        color: #060606;
+        color: $backgroundColor;
         padding: 1rem;
         border-radius: 50%;
         transition: all linear 0.5s;
@@ -234,7 +235,7 @@
 
 .hi-container {
   height: 100vh;
-  background-color: #060606; 
+  background-color: $backgroundColor; 
   border: 1px solid salmon;
   div {
     & > h6 {
