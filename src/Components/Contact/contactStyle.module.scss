@@ -1,7 +1,12 @@
 @import "../../scss/mixins", "../../scss/variables";
 .container {
   height: 100vh;
-//   border: 1px solid yellow;
+  h2 {
+    font-size: 3rem;
+    letter-spacing: 8px;
+
+  }
+  //   border: 1px solid yellow;
   font-family: $glacial-indiffrence;
   position: relative;
   .content {
@@ -19,10 +24,13 @@
     }
     .links {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
       gap: 2rem;
       font-size: 4rem;
       padding: 4rem 0;
-      text-align: center; 
+      text-align: center;
       & > i {
         background: white;
         color: #060606;
@@ -35,10 +43,45 @@
         }
       }
     }
-    .copyright { 
+    .copyright {
       position: absolute;
       bottom: 2rem;
       font-size: 1rem;
+    }
+  }
+}
+@include media-md {
+  .container { 
+    height:auto;    
+    .content {
+      margin-top: 1rem;
+      height: auto;
+      .questions {
+        font-size: 1.5rem; 
+        letter-spacing: 3px;
+      }
+      .links {
+        padding: 2rem 0;
+      }
+      .copyright {
+        position: static;
+        // margin-top: 1rem;
+      }
+    }
+  }
+}
+@include media-xl {
+  .container {
+    h2 {
+      font-size:6rem;
+    } 
+    .content { 
+      .questions {
+        font-size: 5rem;  
+      } 
+      .copyright { 
+        font-size: 2rem;
+      }
     }
   }
 }

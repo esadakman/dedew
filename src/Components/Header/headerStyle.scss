@@ -1,78 +1,77 @@
 @import "../../scss/mixins", "../../scss/variables";
 
 .navbar-boot {
-  background-color: $backgroundColor;
-  // border: 1px solid red; 
+  background-color: $backgroundColor; 
+  // background-color: transparent; 
+  // border: 1px solid red;
+  width: 100vw;
   text-transform: uppercase;
   padding: 0 0.4rem;
   font-family: $glacial-indiffrence;
-  letter-spacing: 2.3px; 
+  letter-spacing: 2.3px;
   .navbar-toggler {
     color: white;
-
-  } 
+    border: none;
+  }
   img {
     width: 7rem;
   }
-  .nav-link {
+  .nav-link { 
+    border-radius: 1rem;
     color: white !important;
-    
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: white;
+      transform-origin: bottom left;
+      transition: transform 0.25s ease-out;
+    }
+    &:hover::before { 
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
   }
-   
+  .wallet {
+    text-align: center;
+    width: 13rem; 
+  }
 }
-
-// .header {
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: space-between;
-//   align-items: center;
-//   padding: 0.5rem 1rem;
-//   // position: sticky;
-//   // top: 0;
-//   // z-index: 2;
-//   border: 1px solid red;
-//   .logo {
-//     img {
-//       width: 5rem;
-//     }
-//   }
-//   .menu-container {
-//     display: flex;
-//     flex-direction: row;
-//     .menu {
-//       text-transform: uppercase;
-//       white-space: nowrap;
-//       margin-right: 5px;
-//       font-size: 1rem;
-//       padding: 6px 8px;
-//       cursor: pointer;
-//       transition: 0.3s all linear;
-//       position: relative;
-//       &::after {
-//         content: "";
-//         position: absolute;
-//         width: 100%;
-//         transform: scaleX(0);
-//         height: 3px;
-//         bottom: 0;
-//         left: 0;
-//         background-color: rgb(233, 233, 233);
-//         transform-origin: bottom right;
-//         transition: transform 0.25s ease-out;
-//       }
-//       &:hover::after {
-//         // background-color: rgb(233, 233, 233);
-//         // color: black;
-//         transform: scaleX(1);
-//         transform-origin: bottom left;
-//       }
-//       .icon {
-//         margin-left: 15px;
-//         svg {
-//           width: 0.9em;
-//           height: 0.9em;
-//         }
-//       }
-//     }
-//   }
-// }
+@include media-md {
+  .navbar-boot {
+    .wallet {
+      text-align: start;
+    }
+  }
+}
+@include media-lg {
+  .navbar-boot {
+    .wallet {
+      width: 12rem;
+    }
+  }
+}
+@include media-xl {
+  .navbar-boot {
+    font-size: 2rem;
+    .navbar-toggler {
+      color: white;
+    }
+    img {
+      width: 10rem;
+    }
+    .nav-link {
+      color: white !important;
+    }
+    .wallet {
+      text-align: center;
+      width: 23rem;
+    }
+  }
+}
+ 

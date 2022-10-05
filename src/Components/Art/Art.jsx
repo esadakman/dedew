@@ -29,7 +29,7 @@ function Art() {
       ],
     },
     {
-      id: 1,
+      id: 2,
       name: "John Deo",
       src: imgArt2,
       nickname: "CO-CEO",

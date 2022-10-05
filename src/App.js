@@ -5,8 +5,7 @@ import Contact from "./Components/Contact/Contact";
 import Blog from "./Components/Blog/Blog";
 import Learn from "./Components/Learn/Learn";
 import Faq from "./Components/Faq/Faq";
-import Art from "./Components/Art/Art";
-import CarouselSection from "./Components/Carousel/CarouselSection";
+import Art from "./Components/Art/Art"; 
 import Roadmap from "./Components/Roadmap/Roadmap";
 
 function App() {
@@ -17,11 +16,10 @@ function App() {
       <Blog/>
       <News />
       <Faq />
-      <Art />
+      {/* <Art /> */}
       <Learn/>
       <Roadmap/>
-      <Contact/>
-      <CarouselSection/>
+      <Contact/> 
     </div>
   );
 }

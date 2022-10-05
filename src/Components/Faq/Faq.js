@@ -86,7 +86,7 @@ function Faq() {
   };
   return (
     <div className="faq">
-      <h1 className="title center">LEARN</h1>
+      <h2 className="title center">LEARN</h2>
       <div className="faq-container">
         <div className="left">
           <ul className="faq-ul">

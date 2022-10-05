@@ -1,12 +1,16 @@
 @import "../../scss/mixins", "../../scss/variables";
 
 .container {
-  font-family: "Glacial-Indifference";
-  height: 100vh;
-  //   border: 1px solid yellow;
-  h2 {
-    font-size: 2.4rem;
+  * {
+    transition: all 0.2s linear;
   }
+  font-family: "Glacial-Indifference"; 
+  h2 {
+    font-size: 3rem;
+    letter-spacing: 8px;
+
+  }
+  // border: 1px solid yellow;
   .content {
     // height: 100%;
     height: calc(100% - 94.4px);
@@ -30,8 +34,80 @@
   }
 }
 
+@include media-xl {
+  .container {
+    height: auto; 
+    h2 {
+      font-size: 6rem;
+      // margin: 0;
+    }
+
+    .content { 
+      h1 {
+        font-size: 4rem !important ;
+        margin: 2rem;
+      }
+      p {
+        font-size: 2.4rem;
+        letter-spacing: 2px;
+        text-align: justify;
+        width: 80%;
+        // margin-bottom: 2rem;
+      }
+    }
+  }
+}
+@include media-md {
+  .container {
+    height: auto;
+
+    .content {
+      // height: 100%;
+      height: calc(100% - 94.4px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 2rem;
+      // border: 1px solid red;
+      h1 {
+        font-size: 3rem !important ;
+        margin-bottom: 2rem;
+      }
+      p {
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+        text-align: justify;
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+@include media-sm {
+  .container { 
+    // h2{
+    //   font-size: 2rem;
+    // }
+    .content {   
+      padding: 1rem; 
+      h1 {
+        font-size: 2rem !important ;
+        margin-bottom: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        letter-spacing: 2px;
+        text-align: justify;
+        width: 100%;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
 .hi-container {
-  height: 100vh;
+  // height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,8 +116,8 @@
     & > h6 {
       font-weight: lighter;
       letter-spacing: 2px;
-      font-size: 1rem; 
-      font-family:$glacial-indiffrence;
+      font-size: 1rem;
+      font-family: $glacial-indiffrence;
     }
     .neon {
       font-size: 25rem !important;
@@ -62,6 +138,52 @@
 
     to {
       text-shadow: 0 0 5px #fff, 0 0 30px #fff, 0 0 70px #fff, 0 0 130px #fff;
+    }
+  }
+}
+
+@include media-xl {
+  .hi-container {
+    height: auto;
+    div {
+      padding: 2rem;
+      & > h6 { 
+        letter-spacing: 2px;
+        font-size: 1.4rem; 
+      }
+      .neon {
+        font-size: 30rem !important;  
+      }
+    }
+  }
+}
+@include media-md {
+  .hi-container {
+    height: auto;
+    div {
+      padding: 2rem;
+      & > h6 { 
+        letter-spacing: 2px;
+        font-size: 1rem; 
+      }
+      .neon {
+        font-size: 20rem !important;  
+      }
+    }
+  }
+}
+
+@include media-sm {
+  .hi-container { 
+    div {
+      padding: 2rem;
+      & > h6 { 
+        letter-spacing: 2px;
+        font-size: 1rem; 
+      }
+      .neon {
+        font-size: 15rem !important;  
+      }
     }
   }
 }
