@@ -1,5 +1,7 @@
 import { useState } from "react";
-import "./Faq.scss";
+import learnStyle from "./learnStyle.module.scss";
+import Hi from "./Hi";
+
 const faq = [
   {
     id: 1,
@@ -54,28 +56,32 @@ const faq = [
   {
     id: 11,
     question: "Discord and Slack channels explanation",
-    answer: `level 1 developer
+    answer: ` level 1 developer
   -has right to enter and write whole channels
-
 
   level 2 developer
   -has right to enter whole channels but just read first
   level
 
-
   level 3 developer
   -has right to enter whole channels but just reads the
   first and second levels
-
 
   level 4 developer
   -has right to enter whole channels but just reads the
   first, second and third levels
 
-
   level 5 developer
   -has right to enter whole channels but just reads the
-  first, second, third and fourth levels`,
+  first, second, third and fourth levels
+  
+  software language 1 -members can enter
+  software language 2 -members can enter
+  software language 3 -members can enter
+  software language 4 -members can enter
+  software language 5 -members can enter 
+
+  `,
   },
 ];
 function Faq() {
@@ -85,30 +91,44 @@ function Faq() {
     setAnswer(faq[id - 1].answer);
   };
   return (
-    <div className="faq">
-      <h2 className="title center">LEARN</h2>
-      <div className="faq-container">
-        <div className="left">
-          <ul className="faq-ul">
-            {faq.map((item) => (
-              <li
-                key={item.id}
-                className="faq-question"
-                onClick={() => {
-                  handleClickFaq(item.id);
-                }}
-              >
-                {item.question}
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="right">
-          <div className="answer display-linebreak">{answer}</div>
+    <>
+      <div className={learnStyle["faq"]}>
+        <h2 className={learnStyle["title"]}>LEARN</h2>
+        <div className={learnStyle["faq-container"]}>
+          <div className={learnStyle["left"]}>
+            <ul className={learnStyle["faq-ul"]}>
+              {faq.map((item) => (
+                <li
+                  key={item.id}
+                  className={learnStyle["faq-question"]}
+                  onClick={() => {
+                    handleClickFaq(item.id);
+                  }}
+                >
+                  {item.question}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className={learnStyle["right"]}>
+            <div className={learnStyle["answer display-linebreak"]}>
+              {answer}
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+      <Hi />
+    </>
   );
 }
 
 export default Faq;
+
+// question            -members can enter
+// job opportunity     -everyone
+// job opportunity vip -members can enter
+// chat                -members can enter
+// announcements       -everyone
+// complaint and suggestions -everyone
+// education           -members can enter
+// daily activity      -members can enter

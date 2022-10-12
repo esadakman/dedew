@@ -8,10 +8,10 @@ function Section() {
       <header className={sectionStyle["header"]}>
         <img src={fingers} alt="" />
         <div className={sectionStyle["btn-container"]}>
-          <button className={sectionStyle["header-button"]}>
+          {/* <button className={sectionStyle["header-button"]}>
             MINT CALENDAR
           </button>
-          <button className={sectionStyle["header-button"]}>QUIZ</button>
+          <button className={sectionStyle["header-button"]}>QUIZ</button> */}
         </div>
       </header>
     </div>

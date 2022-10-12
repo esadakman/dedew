@@ -1,11 +1,10 @@
 @import "../../scss/mixins", "../../scss/variables";
 
 .container {
-  height: 100vh; 
+  height: 100vh;
   h2 {
     font-size: 3rem;
     letter-spacing: 8px;
-
   }
   display: flex;
   flex-direction: column;
@@ -95,30 +94,60 @@
 }
 
 @include media-md {
-  .container {  
+  .container {
     height: auto;
-    .blog-container { 
-      .content-container {  
+    .blog-container {
+      .content-container {
         display: flex;
         flex-direction: column;
         .blog-left {
-          display: none; 
+          display: none;
         }
-        .blog-right { 
+        .blog-right {
           padding: 1rem;
-          width: 100%; 
+          width: 100%;
           gap: 2rem;
         }
-        
       }
     }
   }
 }
 @include media-xl {
-  .container {  
-   h2{
-    font-size: 6rem;
-   }
-    
+  .container {
+    h2 {
+      font-size: 6rem;
+    }
+    .blog-container {
+       
+      .content-container { 
+        .blog-left { 
+          .circle_1 {
+            width: 18rem;
+            height: 18rem; 
+          }
+          .circle_2 {
+            width: 16rem;
+            height: 16rem; 
+          }
+          .circle_3 {
+            width: 15rem;
+            height: 15rem; 
+          }
+        }
+        .blog-right {  
+          align-items: flex-start;
+          .circle-up { 
+            height: 40%;
+            .circle-right {
+              width: 22rem;
+              height: 22rem; 
+            }
+          }
+          .content { 
+            font-size: 2.2rem !important;
+          }
+        }
+      }
+    }
   }
 }
