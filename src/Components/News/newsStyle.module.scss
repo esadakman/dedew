@@ -1,5 +1,6 @@
 @import "../../scss/mixins", "../../scss/variables";
 .container {
+  margin-bottom: 2%;
   * {
     transition: all 0.2s linear;
   }
@@ -9,6 +10,7 @@
 
   }
   font-family: $glacial-indiffrence;
+  // border: 1px solid red;
   // height: 100vh;
   // margin-bottom: 2rem;
   display: flex;
@@ -84,7 +86,7 @@
         // font-weight: lighter;
         padding: 0 1rem;
         & > p {
-          font-size: 2.2rem;
+          font-size: 2rem;
           // max-width: none;
           max-width: 60rem;
 
@@ -99,6 +101,14 @@
           width: 35rem;
         }
       }
+    }
+  }
+}
+
+@include media-sm {
+  .container {
+    h2 {
+      font-size: 2rem;
     }
   }
 }

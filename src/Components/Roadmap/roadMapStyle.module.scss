@@ -1,5 +1,4 @@
 @import "../../scss/mixins", "../../scss/variables";
-// @import '../Images.js' ;
 .container {
   //   border: 1px solid red;
   * {
@@ -19,7 +18,7 @@
     justify-content: center;
     align-items: center;
     .backgroundImage {
-      //   border: 1px solid red;  
+      //   border: 1px solid red;
       background: url("../../assets/images/roadmap/roadMapHorizontal.png");
       background-size: contain;
       background-repeat: no-repeat;
@@ -63,20 +62,20 @@
   }
 }
 @include media-xxl {
-  .container { 
+  .container {
     .backgroundContainer {
-      .backgroundImage { 
+      .backgroundImage {
         .road-one {
           left: 23% !important;
         }
-        .road-two { 
+        .road-two {
           left: 34% !important;
         }
         .road-three {
           left: 48% !important;
         }
         .road-four {
-          left: 58% !important; 
+          left: 58% !important;
         }
         .road-five {
           left: 72% !important;
@@ -96,7 +95,7 @@
         // border: 1px solid red;
         width: 100%;
         min-width: 50rem;
-        height: 60vh; 
+        height: 60vh;
         p {
           font-size: 2rem;
           letter-spacing: 2px;
@@ -127,7 +126,7 @@
     .backgroundContainer {
       .backgroundImage {
         // border: 1px solid green;
-        
+
         width: 100%;
         min-width: 50rem;
         height: 60vh;
@@ -256,14 +255,14 @@
         .road-one {
           left: 29%;
         }
-        .road-two { 
+        .road-two {
           left: 61.4%;
         }
         .road-three {
           left: 29%;
         }
         .road-four {
-          left: 61.4%; 
+          left: 61.4%;
         }
         .road-five {
           left: 29%;
@@ -303,6 +302,14 @@
           top: 82%;
         }
       }
+    }
+  }
+}
+
+@include media-sm {
+  .container {
+    h2 {
+      font-size: 2rem;
     }
   }
 }

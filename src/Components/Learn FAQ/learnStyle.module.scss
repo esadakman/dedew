@@ -120,6 +120,8 @@
 
 @include media-sm {
   .hi-container { 
+    height: auto;
+
     div {
       padding: 2rem;
       & > h6 { 

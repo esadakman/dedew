@@ -4,7 +4,6 @@
   h2 {
     font-size: 3rem;
     letter-spacing: 8px;
-
   }
   //   border: 1px solid yellow;
   font-family: $glacial-indiffrence;
@@ -26,11 +25,21 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-
       gap: 2rem;
       font-size: 4rem;
       padding: 4rem 0;
       text-align: center;
+      #discord {
+        font-size: 3.2rem;
+        padding: 1rem 0.8rem;
+      }
+      #instagram {
+        padding: 0.9rem 1.2rem !important;
+      }
+
+      #youtube {
+        padding: 1rem 0.8rem;
+      }
       & > i {
         background: white;
         color: #060606;
@@ -51,13 +60,13 @@
   }
 }
 @include media-md {
-  .container { 
-    height:auto;    
+  .container {
+    height: auto;
     .content {
       margin-top: 1rem;
       height: auto;
       .questions {
-        font-size: 1.5rem; 
+        font-size: 1.5rem;
         letter-spacing: 3px;
       }
       .links {
@@ -73,14 +82,35 @@
 @include media-xl {
   .container {
     h2 {
-      font-size:6rem;
-    } 
-    .content { 
+      font-size: 6rem;
+    }
+    .content {
       .questions {
-        font-size: 5rem;  
-      } 
-      .copyright { 
+        font-size: 4rem;
+      }
+      .copyright {
         font-size: 2rem;
+      }
+    }
+  }
+}
+@include media-sm {
+  .container {
+    h2 {
+      font-size: 2rem;
+    }
+  }
+  .content {
+    .questions {
+      & > span {
+        font-size: 1.5rem; 
+      }
+    }
+    .links {
+      font-size: 2rem !important;
+      #discord {
+        font-size: 2.1rem !important;
+        padding: 1rem 0.8rem;
       }
     }
   }

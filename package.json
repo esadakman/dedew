@@ -15,6 +15,8 @@
     "bootstrap": "^5.2.1",
     "react-bootstrap": "^2.5.0",
     "sass": "^1.54.3",
+    "react-spring-3d-carousel": "1.2.0",
+    "uuid": "3.3.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

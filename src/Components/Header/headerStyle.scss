@@ -1,5 +1,11 @@
 @import "../../scss/mixins", "../../scss/variables";
+.dropdown-menu {
+  min-width:100% !important;
+}
 
+#navbarScrollingDropdown {
+  width:max-content
+}
 .navbar-boot {
   background-color: $backgroundColor; 
   // background-color: transparent; 

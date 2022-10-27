@@ -20,9 +20,9 @@ function Header() {
             <Nav className="me-auto my-2 my-lg-0 d-flex w-100 justify-content-center gap-1 text-light asd">
               <Nav.Link href="#action1">News</Nav.Link>
               <NavDropdown title="Project Detail">
-                <NavDropdown.Item href="#action/1.1">Learn </NavDropdown.Item>
-                <NavDropdown.Item href="#action/1.2">Art</NavDropdown.Item>
-                <NavDropdown.Item href="#action/1.3">Roadmap</NavDropdown.Item>
+                <NavDropdown.Item style={{width:'100%'}} href="#action/1.1">Learn </NavDropdown.Item>
+                <NavDropdown.Item style={{width:'100%'}} href="#action/1.2">Art</NavDropdown.Item>
+                <NavDropdown.Item style={{width:'100%'}} href="#action/1.3">Roadmap</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="About Us">
                 <NavDropdown.Item href="#action/2.1">Team</NavDropdown.Item>

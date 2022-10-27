@@ -3,8 +3,9 @@ import Section from "./Components/Section/Section";
 import News from "./Components/News/News";
 import Contact from "./Components/Contact/Contact";
 import Blog from "./Components/Blog/Blog"; 
-import Faq from "./Components/Learn FAQ/Faq"; 
+import Learn from "./Components/Learn FAQ/Learn"; 
 import Roadmap from "./Components/Roadmap/Roadmap"; 
+import Team from "./Components/Team/Team";
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
       <Section />
       <Blog/>
       <News />
-      <Faq />  
+      <Learn />  
       <Roadmap/>
+      <Team/>
       <Contact/> 
     </div>
   );

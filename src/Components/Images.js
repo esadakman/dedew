@@ -11,7 +11,6 @@ import fingers from "../assets/images/fingers.svg";
 import roadMapHorizontal from "../assets/images/roadmap/roadMapHorizontal.png";
 import roadMapVertical from "../assets/images/roadmap/roadMapVertical.png";
 
-
 // const SvgDownArrow = `<svg
 // width="1em"
 // height="1em"
@@ -28,11 +27,9 @@ import roadMapVertical from "../assets/images/roadmap/roadMapVertical.png";
 // ></path>
 // </svg>`;
 
- 
-
 export {
   dedewLogo,
-//   SvgDownArrow, 
+  //   SvgDownArrow,
   NewsImg,
   imgArt1,
   imgArt2,
@@ -42,5 +39,5 @@ export {
   fingerPng,
   roadMapHorizontal,
   roadMapVertical,
-  fingers
+  fingers,
 };
