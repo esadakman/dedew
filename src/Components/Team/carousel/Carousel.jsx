@@ -10,9 +10,7 @@ export default function Carroussel(props) {
   const [offsetRadius, setOffsetRadius] = useState(3);
   const [goToSlide, setGoToSlide] = useState(0);
   const [cards] = useState(table);
-  // useEffect(() => {
-  //   setOffsetRadius(props.offset);
-  // }, [props.offset]);
+
   const handleResize = () => {
     if (window.innerWidth < 600) {
       setOffsetRadius(1);
@@ -26,9 +24,61 @@ export default function Carroussel(props) {
   useEffect(() => {
     window.addEventListener("resize", handleResize);
   });
+
+  let xDown = null;
+  let yDown = null;
+
+  const getTouches = (evt) => {
+    return (
+      evt.touches || evt.originalEvent.touches // browser API
+    ); // jQuery
+  };
+
+  const handleTouchStart = (evt) => {
+    const firstTouch = getTouches(evt)[0];
+    xDown = firstTouch.clientX;
+    yDown = firstTouch.clientY;
+  };
+
+  const handleTouchMove = (evt) => {
+    if (!xDown || !yDown) {
+      return;
+    }
+
+    let xUp = evt.touches[0].clientX;
+    let yUp = evt.touches[0].clientY;
+    console.log(xUp);
+    let xDiff = xDown - xUp;
+    let yDiff = yDown - yUp;
+
+    if (Math.abs(xDiff) > Math.abs(yDiff)) {
+      /*most significant*/
+      if (xDiff > 0) {
+        /* left swipe */
+        setGoToSlide(goToSlide + 1);
+      } else {
+        /* right swipe */
+        setGoToSlide(goToSlide - 1);
+      }
+    } else {
+      if (yDiff > 0) {
+        /* up swipe */
+      } else {
+        /* down swipe */
+      }
+    }
+    /* reset values */
+    xDown = null;
+    yDown = null;
+  };
+
   return (
     <>
-      <main className={teamStyle["carousel"]}>
+      <main
+        className={teamStyle["carousel"]}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+      >
         <Carousel
           slides={cards}
           goToSlide={goToSlide}
@@ -51,3 +101,7 @@ export default function Carroussel(props) {
     </>
   );
 }
+
+// useEffect(() => {
+//   setOffsetRadius(props.offset);
+// }, [props.offset]);

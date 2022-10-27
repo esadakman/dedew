@@ -6,6 +6,7 @@ import Question from '../Question'
 import Hints from '../Hints' 
 
 function Section() {
+  console.log(Quiz);
   const [quizOpened, setQuizOpened] = useState(false);
   return (
     <div className={sectionStyle["section"]}>
