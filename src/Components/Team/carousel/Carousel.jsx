@@ -20,7 +20,9 @@ export default function Carroussel(props) {
       setOffsetRadius(3);
     }
   };
-
+  if (goToSlide < 0) {
+    setGoToSlide(0);
+  }
   useEffect(() => {
     window.addEventListener("resize", handleResize);
   });
@@ -47,7 +49,7 @@ export default function Carroussel(props) {
 
     let xUp = evt.touches[0].clientX;
     let yUp = evt.touches[0].clientY;
-    console.log(xUp);
+    // console.log(xUp);
     let xDiff = xDown - xUp;
     let yDiff = yDown - yUp;
 
@@ -88,8 +90,8 @@ export default function Carroussel(props) {
         />
       </main>
       <article className={teamStyle.article}>
-        <h2>{props.cards[goToSlide].content.props.name}</h2>
-        <h3>{props.cards[goToSlide].content.props.role}</h3>
+        <h2>{props?.cards[goToSlide]?.content?.props.name}</h2>
+        <h3>{props?.cards[goToSlide]?.content?.props.role}</h3>
         {/* <h4>{props.cards[goToSlide].content.props.social}</h4> */}
         <div className={teamStyle["links"]}>
           <i className="fa-brands fa-linkedin"></i>
