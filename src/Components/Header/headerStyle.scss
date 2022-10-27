@@ -7,9 +7,8 @@
   width:max-content
 }
 .navbar-boot {
-  background-color: $backgroundColor; 
-  // background-color: transparent; 
-  // border: 1px solid red;
+  // height: 4rem;
+  background-color: $backgroundColor;  
   width: 100vw;
   text-transform: uppercase;
   padding: 0 0.4rem;
@@ -20,6 +19,7 @@
     border: none;
   }
   img {
+    // border: 1px solid red;
     width: 7rem;
   }
   .nav-link { 

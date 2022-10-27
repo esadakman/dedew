@@ -51,41 +51,4 @@ function Header() {
 }
 
 export default Header;
-
-// {/* <header className="header">
-// <div className="logo">
-//   <img src={bitdevLogo} alt="logo" />
-// </div>
-
-// <div className="menu-container">
-//   <span className="menu">NEWS</span>
-//   <span className="menu">
-//     PROJECT DETAILS
-//     <span
-//       className="icon"
-//       dangerouslySetInnerHTML={{ __html: SvgDownArrow }}
-//     ></span>
-//     {/*
-//     LEARN
-//     ART
-//     ROADMAP
-//   */}
-//   </span>
-//   <span className="menu">
-//     ABOUT US
-//     <span
-//       className="icon"
-//       dangerouslySetInnerHTML={{ __html: SvgDownArrow }}
-//     ></span>
-//     {/*
-//     TEAM
-//     ---------
-//     PARTNERSHIP
-//     SPONSORSHIP
-//   */}
-//   </span>
-//   <span className="menu">CONTACT US</span>
-// </div>
-
-// <Wallet />
-// </header> */}
+ 
