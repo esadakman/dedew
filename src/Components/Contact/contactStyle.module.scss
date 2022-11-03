@@ -59,6 +59,15 @@
     }
   }
 }
+
+@include media-mobile-lg{
+  .content{
+    .links{ 
+      // border: 1px solid red;
+      width: 80%;
+    }
+  }
+}
 @include media-md {
   .container {
     height: auto;
@@ -71,6 +80,7 @@
       }
       .links {
         padding: 2rem 0;
+        max-width: 100%;
       }
       .copyright {
         position: static;

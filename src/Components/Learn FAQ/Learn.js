@@ -102,6 +102,7 @@ function Learn() {
       return (
         <>
           <div
+          id="learn"
             className="faq justify-content-center"
             onClick={() => {
               handleClose();
@@ -129,7 +130,7 @@ function Learn() {
       );
     } else {
       return (
-        <div className="faq">
+        <div className="faq" id="learn">
           <h2 className="title center">LEARN</h2>
           <div className="faq-container">
             <div className="left">
@@ -154,7 +155,7 @@ function Learn() {
   } else {
     return (
       <>
-        <div className="faq">
+        <div className="faq" id="learn">
           <h2 className="title center">LEARN</h2>
           <div className="faq-container">
             <div className="left">

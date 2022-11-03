@@ -3,7 +3,7 @@ import { useSpring, animated } from "react-spring";
 import teamStyle from "../Style/teamStyle.module.scss";
 
 function Card({ image }) {
-  const [show, setShown] = useState(false); 
+  const [show, setShown] = useState(false);
   const props3 = useSpring({
     transform: show ? "scale(1.03)" : "scale(1)",
     boxShadow: show
@@ -12,16 +12,20 @@ function Card({ image }) {
   });
 
   return (
-    <section className={teamStyle.container}>
-      <animated.div
-        className={teamStyle.card}
-        style={props3}
-        onMouseEnter={() => setShown(true)}
-        onMouseLeave={() => setShown(false)}
-      >
-        <img src={image} alt="pp" className={teamStyle.imgs}/>
-      </animated.div>
+    <>
+      
+
+      <section className={teamStyle.container}>
+        <animated.div
+          className={teamStyle.card}
+          style={props3}
+          onMouseEnter={() => setShown(true)}
+          onMouseLeave={() => setShown(false)}
+        >
+          <img src={image} alt="pp" className={teamStyle.imgs} />
+        </animated.div>
       </section>
+    </>
   );
 }
 

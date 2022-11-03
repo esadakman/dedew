@@ -14,14 +14,36 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  .section {
-    width: 90%;
+  .section { 
+    .transition{
+      border: 1px solid white;
+      height: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: red;
+      position: relative; 
+      font-size: 2rem; 
+      cursor: pointer;
+      // &>i{
+      //   position: absolute;
+      // }
+    }
+    // &>i{
+      
+    // }
+    width: 97%;
     height: 82vh;
     overflow: hidden;
+    display: flex; 
+    align-items: flex-start;
+    justify-content: center;
+   .wrapper{
+    width: 100%;
+    height: 100%;
+    // background-color: aqua;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     .carousel {
       width: 100%;
       height: 100%;
@@ -43,6 +65,7 @@
         }
       }
     }
+   }
     .article {
       text-align: center;
       min-width: 15rem;
@@ -76,25 +99,27 @@
         font-size: 6rem !important;
       }
     }
-    .section {
-      .carousel {
-        .container {
-          .card {
-            .imgs {
-              max-height: 60vh;
+    .section { 
+      .wrapper{
+        .carousel {
+          .container {
+            .card {
+              .imgs {
+                max-height: 60vh;
+              }
             }
           }
         }
-      }
-      .article {
-        & > h2,
-        h3 {
-          font-size: 3rem;
-        }
-        .links {
-          & > i {
-            padding: 1rem !important;
+        .article {
+          & > h2,
+          h3 {
             font-size: 3rem;
+          }
+          .links {
+            & > i {
+              padding: 1rem !important;
+              font-size: 3rem;
+            }
           }
         }
       }
@@ -106,19 +131,21 @@
   .container {
     .section {
       width: 95%;
-      .carousel {
-        .container {
-          .card {
-            .imgs {
-              height: 40vh;
+      .wrapper{
+        .carousel {
+          .container {
+            .card {
+              .imgs {
+                height: 40vh;
+              }
             }
           }
         }
-      }
-      .article {
-        & > h2,
-        h3 {
-          font-size: 1.5rem;
+        .article {
+          & > h2,
+          h3 {
+            font-size: 1.5rem;
+          }
         }
       }
     }
@@ -128,13 +155,15 @@
   .container {
     .section {
       height: 70vh;
-      .carousel {
-        // border: 1px solid red;
-        height: 70%;
-        .container {
-          .card {
-            .imgs {
-              height: 30vh;
+      .wrapper{
+        .carousel {
+          // border: 1px solid red;
+          height: 70%;
+          .container {
+            .card {
+              .imgs {
+                height: 30vh;
+              }
             }
           }
         }
@@ -151,7 +180,8 @@
       }
     }
     .section {
-      height: 50vh;
+      .wrapper{
+        height: 50vh;
       .carousel {
         .container {
           .card {
@@ -166,6 +196,7 @@
         h3 {
           font-size: 1.3rem;
         }
+      }
       }
     }
   }

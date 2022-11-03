@@ -1,14 +1,14 @@
 @import "../../scss/mixins", "../../scss/variables";
 .dropdown-menu {
-  min-width:100% !important;
+  min-width: 100% !important;
 }
 
 #navbarScrollingDropdown {
-  width:max-content
+  width: max-content;
 }
 .navbar-boot {
   // height: 4rem;
-  background-color: $backgroundColor;  
+  background-color: $backgroundColor;
   width: 100vw;
   text-transform: uppercase;
   padding: 0 0.4rem;
@@ -22,10 +22,16 @@
     // border: 1px solid red;
     width: 7rem;
   }
-  .nav-link { 
+  .dropdown-item { 
+      &:active {
+        background-color: rgba(128, 128, 128, 0.494) !important; 
+    }
+  }
+  .nav-link {
     border-radius: 1rem;
     color: white !important;
     position: relative;
+
     &:before {
       content: "";
       position: absolute;
@@ -38,14 +44,14 @@
       transform-origin: bottom left;
       transition: transform 0.25s ease-out;
     }
-    &:hover::before { 
+    &:hover::before {
       transform: scaleX(1);
       transform-origin: bottom left;
     }
   }
   .wallet {
     text-align: center;
-    width: 13rem; 
+    width: 13rem;
   }
 }
 @include media-md {
@@ -80,4 +86,3 @@
     }
   }
 }
- 

@@ -2,14 +2,14 @@ import Quiz from "./Quiz/Quiz";
 import { useState } from "react";
 import { fingers } from "../Images";
 import sectionStyle from "./sectionStyle.module.scss";
-import Question from '../Question' 
-import Hints from '../Hints' 
+import Question from "../Question";
+import Hints from "../Hints";
 
 function Section() {
   console.log(Quiz);
   const [quizOpened, setQuizOpened] = useState(false);
   return (
-    <div className={sectionStyle["section"]}>
+    <div className={sectionStyle["section"]} id="section">
       <header className={sectionStyle["header"]}>
         <img src={fingers} alt="" />
         <div className={sectionStyle["btn-container"]}>
@@ -32,24 +32,23 @@ function Section() {
                 </div>
 
                 <div className="quiz-main">
-                <div className="container">
-            <Question 
-              // question={question}
-              // inputEvent={getUserAnswer}
-              // submitEvent={checkAnswer}
-              // loading={loading}
-              />
-            <Hints
-              // userCount={userCount}
-              // question={question}
-              // user={user}
-              />
-          </div>
-
+                  <div className="container">
+                    <Question
+                    // question={question}
+                    // inputEvent={getUserAnswer}
+                    // submitEvent={checkAnswer}
+                    // loading={loading}
+                    />
+                    <Hints
+                    // userCount={userCount}
+                    // question={question}
+                    // user={user}
+                    />
+                  </div>
                 </div>
 
                 <div className="hint-count">
-                <button
+                  <button
                     className="quiz-button"
                     onClick={() => setQuizOpened(false)}
                   >
@@ -69,4 +68,3 @@ function Section() {
 }
 
 export default Section;
- 

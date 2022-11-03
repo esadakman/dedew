@@ -3,7 +3,7 @@ import newsStyle from "./newsStyle.module.scss";
 
 function News() {
   return (
-    <div>  
+    <section id="news">  
       <div className={newsStyle["container"]}>
         <div className="text-center pt-5 text-light">
           <h2>NEWS</h2>
@@ -24,7 +24,7 @@ function News() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

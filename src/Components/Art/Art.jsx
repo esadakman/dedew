@@ -118,7 +118,7 @@ function Art() {
     },
   ];
   return (
-    <div className="arts-container">
+    <div className="arts-container" id="art">
       <h1 className="title center">Art</h1>
       <div className="arts">
         {arts.map((art) => (

@@ -3,7 +3,7 @@ import contactStyle from './contactStyle.module.scss'
 
 const Contact = () => {
   return (
-    <div className={contactStyle["container"]} >
+    <div className={contactStyle["container"]} id="contact">
       <div className="text-center pt-5 text-light ">
         <h2>CONTACT US</h2>
       </div>

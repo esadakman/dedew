@@ -5,16 +5,14 @@ import cards from "./carousel/data";
 const Team = () => {
   return (
     <>
-      <section className={teamStyle["container"]}>
+      <section className={teamStyle["container"]} id="team">
         <header className={teamStyle["header"]}>
           <h2>MEET THE TEAM</h2>
         </header>
-        <div className={teamStyle["section"]}>
-          <Carousel
-            cards={cards} 
-          />
+        <div className={teamStyle["section"]}> 
+          <Carousel cards={cards} /> 
         </div>
-      </section> 
+      </section>
     </>
   );
 };

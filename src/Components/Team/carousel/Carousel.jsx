@@ -20,9 +20,6 @@ export default function Carroussel(props) {
       setOffsetRadius(3);
     }
   };
-  if (goToSlide < 0) {
-    setGoToSlide(0);
-  }
   useEffect(() => {
     window.addEventListener("resize", handleResize);
   });
@@ -73,33 +70,47 @@ export default function Carroussel(props) {
     xDown = null;
     yDown = null;
   };
-
+  if (goToSlide < 0) {
+    setGoToSlide(props.cards.length - 1);
+  } else if (goToSlide > props.cards.length - 1) {
+    setGoToSlide(0);
+  }
+  // console.log(props);
+  console.log(goToSlide);
   return (
     <>
-      <main
-        className={teamStyle["carousel"]}
-        onTouchStart={handleTouchStart}
-        onTouchMove={handleTouchMove}
-      >
-        <Carousel
-          slides={cards}
-          goToSlide={goToSlide}
-          offsetRadius={offsetRadius}
-          showNavigation={false}
-          animationConfig={config.gentle}
-        />
-      </main>
-      <article className={teamStyle.article}>
-        <h2>{props?.cards[goToSlide]?.content?.props.name}</h2>
-        <h3>{props?.cards[goToSlide]?.content?.props.role}</h3>
-        {/* <h4>{props.cards[goToSlide].content.props.social}</h4> */}
-        <div className={teamStyle["links"]}>
-          <i className="fa-brands fa-linkedin"></i>
-          <i className="fa-brands fa-instagram"></i>
-          <i className="fa-brands fa-github"></i>
-          {/* <i className="fa-solid fa-envelope"></i> */}
-        </div>
-      </article>
+      {/* <div className={teamStyle.transition}>
+        <i className="fa-solid fa-chevron-left font"></i>
+      </div> */}
+      <div className={teamStyle.wrapper}>
+        <main
+          className={teamStyle["carousel"]}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+        >
+          <Carousel
+            slides={cards}
+            goToSlide={goToSlide}
+            offsetRadius={offsetRadius}
+            showNavigation={false}
+            animationConfig={config.gentle}
+          />
+        </main>
+        <article className={teamStyle.article}>
+          <h2>{props?.cards[goToSlide]?.content?.props.name}</h2>
+          <h3>{props?.cards[goToSlide]?.content?.props.role}</h3>
+          {/* <h4>{props.cards[goToSlide].content.props.social}</h4> */}
+          <div className={teamStyle["links"]}>
+            <i className="fa-brands fa-linkedin"></i>
+            <i className="fa-brands fa-instagram"></i>
+            <i className="fa-brands fa-github"></i>
+            {/* <i className="fa-solid fa-envelope"></i> */}
+          </div>
+        </article>
+      </div>
+      {/* <div className={teamStyle.transition}>
+        <i className="fa-solid fa-chevron-right font"></i>
+      </div> */}
     </>
   );
 }
