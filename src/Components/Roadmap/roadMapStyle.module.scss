@@ -12,13 +12,15 @@
     font-size: 3rem;
   }
   .backgroundContainer {
+    
     width: 100vw;
     height: calc(100% - 94.4px);
     display: flex;
     justify-content: center;
     align-items: center;
+    // border: 1px solid red;
     .backgroundImage {
-      //   border: 1px solid red;
+      // border: 1px solid red;
       background: url("../../assets/images/roadmap/roadMapHorizontal.png");
       background-size: contain;
       background-repeat: no-repeat;
@@ -36,7 +38,7 @@
       .road-one {
         position: absolute;
         top: 10%;
-        left: 18%;
+        left: 22%;
       }
       .road-two {
         position: absolute;
@@ -173,6 +175,7 @@
 @include media-md {
   .container {
     .backgroundContainer {
+      // height: auto;
       .backgroundImage {
         // border: 1px solid green;
         background: url("../../assets/images/roadmap/roadMapVertical.png");

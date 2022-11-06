@@ -1,5 +1,5 @@
-import dedewLogo from "../assets/images/logo/dedewLogo.png";
-import NewsImg from "../assets/images/news/logo.jpg";
+import dedewLogo from "../assets/images/logo/dedewLogo.png"; 
+import dedewLogo2 from "../assets/images/logo/logotaypebeyaz.png"; 
 
 import imgArt1 from "../assets/images/apes/1.jpg";
 import imgArt2 from "../assets/images/apes/2.jpg";
@@ -29,8 +29,8 @@ import roadMapVertical from "../assets/images/roadmap/roadMapVertical.png";
 
 export {
   dedewLogo,
-  //   SvgDownArrow,
-  NewsImg,
+  dedewLogo2,
+  //   SvgDownArrow, 
   imgArt1,
   imgArt2,
   imgArt3,
@@ -39,5 +39,6 @@ export {
   fingerPng,
   roadMapHorizontal,
   roadMapVertical,
-  fingers,
+  fingers, 
+
 };

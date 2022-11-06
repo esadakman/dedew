@@ -1,21 +1,22 @@
-import Quiz from "./Quiz/Quiz";
+// import Quiz from "./Quiz/Quiz";
 import { useState } from "react";
-import { fingers } from "../Images";
+// import { fingers } from "../Images";
+import { fingerPng } from "../Images";
 import sectionStyle from "./sectionStyle.module.scss";
 import Question from "../Question";
 import Hints from "../Hints";
 
 function Section() {
-  console.log(Quiz);
+  // console.log(Quiz);
   const [quizOpened, setQuizOpened] = useState(false);
   return (
     <div className={sectionStyle["section"]} id="section">
       <header className={sectionStyle["header"]}>
-        <img src={fingers} alt="" />
+        <img src={fingerPng} alt="" />
         <div className={sectionStyle["btn-container"]}>
-          {/* <button className={sectionStyle["header-button"]}>
+          <button className={sectionStyle["header-button"]}>
             MINT CALENDAR
-          </button>  */}
+          </button> 
           <button
             className={sectionStyle["header-button"]}
             onClick={() => setQuizOpened(!quizOpened)}

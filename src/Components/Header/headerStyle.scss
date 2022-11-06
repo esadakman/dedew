@@ -1,14 +1,17 @@
 @import "../../scss/mixins", "../../scss/variables";
 .dropdown-menu {
+  color: white;
   min-width: 100% !important;
+  background-color: #3b3b3ba1 !important;
 }
 
 #navbarScrollingDropdown {
   width: max-content;
 }
+
 .navbar-boot {
   // height: 4rem;
-  background-color: $backgroundColor;
+  background-color: #000;
   width: 100vw;
   text-transform: uppercase;
   padding: 0 0.4rem;
@@ -18,20 +21,33 @@
     color: white;
     border: none;
   }
-  img {
-    // border: 1px solid red;
-    width: 7rem;
+  img { 
+    width: 8rem;
+    transition: all .3s linear;
+    &:hover{
+      transform: scale(1.1);
+    }
   }
-  .dropdown-item { 
-      &:active {
-        background-color: rgba(128, 128, 128, 0.494) !important; 
+  .dropdown-item {
+    color: white; 
+    transition: all .3s linear;
+    &:active {
+      background-color: rgba(128, 128, 128, 0.494) !important;
+    }
+    &:hover {
+      // transition: all .3s linear;
+      font-weight: 900;
+      color: white;
+      background-color: transparent;
     }
   }
   .nav-link {
     border-radius: 1rem;
     color: white !important;
     position: relative;
-
+    &>::after{
+      display: none;
+    }
     &:before {
       content: "";
       position: absolute;
@@ -52,19 +68,22 @@
   .wallet {
     text-align: center;
     width: 13rem;
+    // border: 1px solid red;
+
   }
 }
-@include media-md {
-  .navbar-boot {
-    .wallet {
-      text-align: start;
-    }
-  }
-}
+// @include media-md {
+//   .navbar-boot {
+//     .wallet {
+//       text-align: start;
+//     }
+//   }
+// }
 @include media-lg {
   .navbar-boot {
     .wallet {
-      width: 12rem;
+      // width: 12rem;
+      text-align: left;
     }
   }
 }
@@ -81,8 +100,8 @@
       color: white !important;
     }
     .wallet {
-      text-align: center;
-      width: 23rem;
+      text-align: left;
+      // width: 23rem;
     }
   }
 }

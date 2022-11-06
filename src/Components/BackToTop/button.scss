@@ -1,4 +1,5 @@
 .backTop {
+  z-index: 5;
   position: fixed;
   bottom: 3.5rem;
   right: 1.5rem;
@@ -6,6 +7,7 @@
   border: none;
   border-radius: .5rem;
   // width: auto;
+  color: black;
   padding: .5rem;
   display: flex;
   letter-spacing: 1px;

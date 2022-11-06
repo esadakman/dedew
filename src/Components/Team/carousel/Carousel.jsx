@@ -76,7 +76,7 @@ export default function Carroussel(props) {
     setGoToSlide(0);
   }
   // console.log(props);
-  console.log(goToSlide);
+  // console.log(goToSlide);
   return (
     <>
       {/* <div className={teamStyle.transition}>
