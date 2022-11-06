@@ -3,10 +3,10 @@ import blogStyle from './blogStyle.module.scss';
 
 const Blog = () => {
   return (
-    <div className={blogStyle["container"]} >
-      <div className="text-center pt-5 text-light">
+    <section className={blogStyle["container"]} >
+      <header className="text-center pt-5 text-light">
         <h2>BLOG</h2>
-      </div>
+      </header>
       <div className={blogStyle["blog-container"]} >
         <div className={blogStyle["content-container"]}>
           <div className={blogStyle["blog-left"]} >
@@ -31,7 +31,7 @@ const Blog = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,7 +1,8 @@
 @import "../../scss/mixins", "../../scss/variables";
 
 .container {
-  height: 100vh;
+  min-height: 100vh;
+  width: 100vw; 
   h2 {
     font-size: 3rem;
     letter-spacing: 8px;
@@ -9,7 +10,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
   font-family: $glacial-indiffrence;
+  width: 100%;
   .blog-container {
     width: 100%;
     height: calc(100% - 94.4px);
@@ -26,6 +29,7 @@
       display: flex;
       .blog-left {
         width: 50%;
+        padding: 5rem;
         /* border: 1px solid green; */
         position: relative;
         display: flex;
@@ -33,42 +37,43 @@
         align-items: center;
         flex-direction: column;
         gap: 2rem;
-        height: 100%;
+        min-height: 70vh;
         .circle_1 {
+          width: 14rem;
+          height: 14rem;
+          border-radius: 50%;
+          background: $circleBgColor;
+          position: absolute;
+          left: 20%;
+          top: 0;
+        }
+        .circle_2 {
           width: 12rem;
           height: 12rem;
           border-radius: 50%;
           background: $circleBgColor;
           position: absolute;
-          left: 20%;
-          top: 14%;
+          top: 8rem;
+          left: 60%;
         }
-        .circle_2 {
+        .circle_3 {
           width: 10rem;
           height: 10rem;
           border-radius: 50%;
           background: $circleBgColor;
           position: absolute;
-          top: 35%;
-          left: 60%;
-        }
-        .circle_3 {
-          width: 9rem;
-          height: 9rem;
-          border-radius: 50%;
-          background: $circleBgColor;
-          position: absolute;
-          top: 60%;
-          left: 27%;
+          top: 20rem;
+          left: 30%;
         }
       }
       .blog-right {
-        padding: 3rem 5rem;
+        padding: 0rem 2rem;
         width: 50%;
         display: flex;
         flex-direction: column;
         height: 100%;
         align-items: center;
+        // border: 1px solid red;
         .circle-up {
           width: 100%;
           height: 50%;
@@ -79,6 +84,7 @@
             height: 12rem;
             border-radius: 50%;
             background: $circleBgColor;
+            margin-bottom: 2rem;
           }
         }
         .content {
@@ -93,25 +99,118 @@
   }
 }
 
-@include media-md {
-  .container {
-    height: auto;
+@include media-sm {
+  .container { 
     .blog-container {
-      .content-container {
-        display: flex;
-        flex-direction: column;
-        .blog-left {
-          display: none;
+      .content-container { 
+        .blog-left {  
+          // border: 1px solid red;
+          min-height: 28rem;
+          width: 100%;
+          margin-right: 1rem;
+          .circle_1 { 
+            width: 11rem;
+            height: 11rem; 
+            top: 10%;
+          }
+          .circle_2 {
+            width: 9rem;
+            height: 9rem;
+            top: 0 !important;  
+          }
+          .circle_3 {
+            
+            width: 8rem;
+            height: 8rem;
+            top: 75%;
+            left: 15%;
+          }
         }
         .blog-right {
-          padding: 1rem;
+          // padding: 0;
+          margin-top: 1rem;
+          min-height: 40vh;
           width: 100%;
-          gap: 2rem;
+          .circle-up {
+            .circle-right {
+              margin-bottom: 0rem;
+            }
+          }
         }
       }
     }
   }
 }
+
+@include media-md {
+  .container {
+    .blog-container {
+      .content-container { 
+        .blog-left { 
+          .circle_1 { 
+            // top: 2rem !important;
+            left: 1rem !important;
+          }
+          .circle_2 {
+            width: 10rem;
+            height: 10rem;
+            top: 10rem !important;
+            left: 55% !important;
+          }
+          .circle_3 {
+            width: 9rem;
+            height: 9rem;
+            top: 20rem;
+            left: 17% !important;
+          }
+        }
+        .blog-right {
+          // height: auto;
+          // height: 50vh;
+          padding: 0;
+          min-height: 40vh; 
+          // width: 80% !important; 
+        }
+      }
+    }
+  }
+}
+
+@include media-lg {
+  .container {
+    .blog-container {
+      .content-container {
+        .blog-left { 
+          .circle_1 { 
+            left: 10%;
+            top: 0;
+          }
+          .circle_2 { 
+            top: 8rem;
+            left: 57%;
+          }
+          .circle_3 { 
+            top: 18rem;
+            left: 25%;
+          }
+        }
+        .blog-right {
+          padding: 0 2rem;  
+          .circle-up { 
+            .circle-right {
+              width: 12rem;
+              height: 12rem;
+              border-radius: 50%;
+              background: $circleBgColor;
+              margin-bottom: 2rem;
+            }
+          } 
+        }
+      }
+    }
+  }
+}
+
 @include media-xl {
   .container {
     // margin-bottom: 10%;
@@ -121,17 +220,19 @@
     .blog-container {
       .content-container {
         .blog-left {
+          // margin: 0 1rem;
           .circle_1 {
-            width: 18rem;
-            height: 18rem;
+            width: 22rem;
+            height: 22rem;
           }
           .circle_2 {
-            width: 16rem;
-            height: 16rem;
+            width: 18rem;
+            height: 18rem; 
           }
           .circle_3 {
-            width: 15rem;
-            height: 15rem;
+            width: 17rem;
+            height: 17rem;
+            top: 27rem;
           }
         }
         .blog-right {
@@ -144,21 +245,15 @@
             }
           }
           .content {
-            margin-top: 4rem;
+            max-width: none;
+            margin-top: 3rem;
+            padding-right: 1rem;
             & > p {
               font-size: 2rem;
             }
           }
         }
       }
-    }
-  }
-}
-
-@include media-sm {
-  .container {
-    h2 {
-      font-size: 2rem;
     }
   }
 }

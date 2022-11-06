@@ -1,8 +1,7 @@
-import { useState } from "react";
 // import Hi from "./Hi";
 import "./Faq.scss";
-import { useEffect } from "react";
-import Button from "react-bootstrap/Button";
+import Carousel from "react-bootstrap/Carousel";
+import learnStyle from "./learnStyle.module.scss";
 
 const faq = [
   {
@@ -68,122 +67,34 @@ const faq = [
   has right to enter whole channels but just reads the first, second and third levels
   -Level 5 Developer-
   has right to enter whole channels but just reads the first, second, third and fourth levels
-  
+
   Software Language 1/2/3/4/5 -members can enter
   `,
   },
 ];
 function Learn() {
-  const [answer, setAnswer] = useState(faq[0].answer);
-  const [open, setOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-
-  const handleClickFaq = (id) => {
-    setAnswer(faq[id - 1].answer);
-    setOpen(!open);
-  };
-  const handleClose = () => {
-    setOpen(!open);
-  };
-
-  const handleResize = () => {
-    if (window.innerWidth < 720) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-  });
-  if (isMobile) {
-    if (open) {
-      return (
-        <>
-          <div
-          id="learn"
-            className="faq justify-content-center"
-            onClick={() => {
-              handleClose();
-            }}
-          >
-            <h2 className="title center">LEARN</h2>
-            <div className="faq-container justify-content-center">
-              <div className="right">
-                <div className="answer display-linebreak text-center  px-3">
-                  {answer}
-                </div>
-                <div className=" button-container pt-4">
-                  <Button
-                    variant="secondary"
-                    className="justify-content-center text-6 px-3 back-button"
-                  >
-                    GO BACK
-                  </Button>
-                </div>
+  return (
+    <section className={learnStyle.section} id="learn">
+      <header className={learnStyle.header}>
+        <h2>LEARN</h2>
+      </header>
+      <Carousel className={learnStyle.container}>
+        {faq.map((item) => (
+          <Carousel.Item key={item.id} className={learnStyle.item}>
+            <div className={learnStyle.itemContainer}>
+              <div className={learnStyle.question}>
+                <h1>{item.question}</h1>
+              </div>
+              <div className={learnStyle.answer}>
+                <h4>{item.answer}</h4>
               </div>
             </div>
-          </div>
-          {/* <Hi /> */}
-        </>
-      );
-    } else {
-      return (
-        <div className="faq" id="learn">
-          <h2 className="title center">LEARN</h2>
-          <div className="faq-container">
-            <div className="left">
-              <ul className="faq-ul">
-                {faq.map((item) => (
-                  <li
-                    key={item.id}
-                    className="faq-question"
-                    onClick={() => {
-                      handleClickFaq(item.id);
-                    }}
-                  >
-                    {item.question}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      );
-    }
-  } else {
-    return (
-      <>
-        <div className="faq" id="learn">
-          <h2 className="title center">LEARN</h2>
-          <div className="faq-container">
-            <div className="left">
-              <ul className="faq-ul">
-                {faq.map((item) => (
-                  <li
-                    key={item.id}
-                    className="faq-question"
-                    onClick={() => {
-                      handleClickFaq(item.id);
-                    }}
-                  >
-                    {item.question}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="right">
-              <div className="answer display-linebreak text-center px-3">
-                {answer}
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* <Hi /> */}
-      </>
-    );
-  }
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    </section>
+  );
 }
+// }
 
 export default Learn;

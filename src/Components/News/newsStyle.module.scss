@@ -6,17 +6,14 @@
   }
   h2 {
     font-size: 3rem;
-    letter-spacing: 8px;
-
+    letter-spacing: 8px; 
   }
-  font-family: $glacial-indiffrence;
-  // border: 1px solid red;
-  // height: 100vh;
-  // margin-bottom: 2rem;
+  font-family: $glacial-indiffrence; 
   display: flex;
   width: 100%;
   flex-direction: column;
   align-items: center;
+  // height: 100vh;
   // border: 1px solid red;
   .content {
     height: calc(100% - 94.4px);
@@ -54,11 +51,10 @@
         text-align: justify;
         font-weight: lighter;
         padding: 0 1rem;
+        width: 80%;
         & > p {
           max-width: none;
-          min-width: none;
-          // margin-left: 5rem;
-          // border: 1px solid green;
+          min-width: none; 
         }
       }
       .imageDiv {
