@@ -11,16 +11,16 @@ import BackToTopButton from "../Components/BackToTop/BackToTopButton";
 const Home = () => {
   return (
     <>
-      {/* <Header />
+      <Header />
       <Section />
       <Blog />
-      <News /> */}
+      <News />
       <Learn />
-      {/* <Roadmap />
+      <Roadmap />
       <Team />
       <Contact />
       
-      <BackToTopButton/> */}
+      <BackToTopButton/>
     </>
   );
 };

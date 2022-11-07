@@ -1,10 +1,10 @@
 @import "../../scss/mixins", "../../scss/variables";
 
-.section { 
+.section {
   overflow: hidden;
   height: 100vh;
-  // width: 99vw; 
-  display: flex; 
+  // width: 99vw;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -18,10 +18,10 @@
     // border: 1px solid red;
     height: calc(100% - 94.4px);
     .item {
-      .itemContainer { 
+      .itemContainer {
         display: flex;
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
         // border: 1px solid green;
         .question {
           // border: 1px solid white;
@@ -37,13 +37,13 @@
           width: 70%;
           // border: 1px solid blue;
           display: flex;
-          align-items: center; 
+          align-items: center;
           display: flex;
           justify-content: center;
           min-height: 17rem;
-          overflow: hidden; 
+          overflow: hidden;
           h4 {
-            text-align: justify; 
+            text-align: justify;
             line-height: 2rem;
             word-spacing: 2px;
           }
@@ -53,59 +53,82 @@
   }
 }
 
-@include media-md {
-  .section { 
-    .container { 
+@include media-xl {
+  .section {
+    height: 70vh;
+    .header {
+      & > h2 {
+        font-size: 6rem;
+      }
+    }
+    .container {
       .item {
         .itemContainer {
-          .question { 
-            height: 12rem; 
-          }  
+          .question {
+            height: 12rem;
+            & > h2 {
+              font-size: 4rem; 
+            }
+          }
           .answer { 
-            display: flex;
-            align-items: center;
-            &>h4{
-              font-size: 1.2rem;
-              line-height: normal; 
+            & > h4 {
+              font-size: 2rem; 
             }
           }
         }
-      }}
+      }
+    }
+  }
+}
+@include media-md {
+  .section {
+    .container {
+      .item {
+        .itemContainer {
+          .question {
+            height: 12rem;
+          }
+          .answer {
+            display: flex;
+            align-items: center;
+            & > h4 {
+              font-size: 1.2rem;
+              line-height: normal;
+            }
+          }
+        }
+      }
+    }
   }
 }
 @include media-sm {
-  .section { 
-    .container { 
+  .section {
+    .header {
+      & > h2 {
+        font-size: 2rem;
+      }
+    }
+    .container {
       .item {
         .itemContainer {
-          .question { 
-            height: auto; 
+          .question {
+            height: auto;
             min-height: 8.5rem;
-          }  
-          .answer { 
+          }
+          .answer {
             display: flex;
             align-items: center;
-            &>h4{
+            & > h4 {
               font-size: 1rem;
-              line-height: normal; 
+              line-height: normal;
             }
           }
         }
-      }}
+      }
+    }
   }
 }
-@include media-lg {
-  .section { 
-    .container { 
-      .item {
-        .itemContainer {
-          .question { 
-            height: 8.5rem; 
-          }   
-        }
-      }}
-  }
-}
+//
 
 .hi-container {
   // height: 100vh;

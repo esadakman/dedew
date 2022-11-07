@@ -12,28 +12,32 @@ function News() {
   useEffect(() => {
     if (inView) {
       animationLeft.start({
+        opacity: 1,
         x: 0,
         transition: {
           type: "spring",
-          duration: 1,
-          bounce: 0.3,
+          duration: 1.2,
+          bounce: 0.5,
         },
       });
       animationRight.start({
         x: 0,
+        opacity: 1,
         transition: {
           type: "spring",
-          duration: 1,
-          bounce: 0.2,
+          duration: 1.2,
+          bounce: 0.4,
         },
       });
     }
     if (!inView) {
       animationLeft.start({
-        x: "-500vw",
+        opacity: 0,
+        x: "-50vw",
       });
       animationRight.start({
-        x: "500vw",
+        opacity: 0, 
+        x: "50vw",
       });
     }
     // console.log("use effecthook, inView =", inView);

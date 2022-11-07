@@ -1,6 +1,6 @@
 @import "../../scss/mixins", "../../scss/variables";
 .container {
-  height: 90vh;
+  height: 80vh;
   h2 {
     font-size: 3rem;
     letter-spacing: 8px;
@@ -11,7 +11,9 @@
   flex-direction: column;
   align-items: center;
   .content {
-    height: 70vh; 
+    border: 1px solid red;
+
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,14 +51,46 @@
           opacity: 0.6;
         }
       }
-    } 
+    }
+  }
+}
+
+@include media-xl {
+  .container {
+    height: 70vh;
+    h2 {
+      font-size: 6rem;
+    }
+    .content {
+      // height: 50vh;
+      .links { 
+        font-size: 5rem; 
+        #discord {
+          padding: 18px 14px;
+        }
+        #instagram {
+          padding: 18px 20px;
+        }
+        #linkedin {
+          padding: 16px 20px;
+        }
+        #youtube {
+          padding: 18px 16px;
+        }
+        & > i {
+          padding: 1rem;
+        }
+      }
+      .copyright {
+        font-size: 2rem;
+      }
+    }
   }
 }
 
 @include media-md {
   .container {
-    .content { 
-
+    .content {
       .links {
         max-width: 100%;
       }
@@ -66,24 +100,13 @@
     }
   }
 }
-@include media-xl {
-  .container {
-    h2 {
-      font-size: 6rem;
-    }
-    .content {
-      .copyright {
-        font-size: 2rem;
-      }
-    }
-  }
-}
+
 @include media-sm {
   .container {
     h2 {
       font-size: 2rem;
     }
-    border: 1px solid green;
+    // border: 1px solid green;
     height: 85vh;
     .content {
       .links {

@@ -99,8 +99,7 @@
         font-size: 6rem !important;
       }
     }
-    .section {
-      height: auto;
+    .section { 
       .wrapper {
         .carousel {
           .container {
@@ -114,12 +113,12 @@
         .article {
           & > h2,
           h3 {
-            font-size: 3rem;
+            font-size: 4rem;
           }
           .links {
             & > i {
               padding: 1rem !important;
-              font-size: 3rem;
+              font-size: 4rem;
             }
           }
         }
