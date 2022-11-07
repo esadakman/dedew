@@ -16,7 +16,7 @@ const Blog = () => {
         y: 0,
         transition: {
           type: "easeInOut",
-          duration: 1,
+          duration: 1.2,
         },
       });
       animationRight.start({
@@ -24,7 +24,7 @@ const Blog = () => {
         y: 0,
         transition: {
           type: "easeInOut",
-          duration: 1,
+          duration: 1.2,
         },
       });
     }
@@ -39,7 +39,7 @@ const Blog = () => {
       });
     }
     // console.log("use effecthook, inView =", inView);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inView]);
 
   return (

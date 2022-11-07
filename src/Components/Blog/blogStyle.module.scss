@@ -2,7 +2,7 @@
 
 .container {
   min-height: 100vh;
-  width: 100vw; 
+  width: 100vw;
   h2 {
     font-size: 3rem;
     letter-spacing: 8px;
@@ -101,26 +101,25 @@
 }
 
 @include media-sm {
-  .container { 
+  .container {
     .blog-container {
-      .content-container { 
-        .blog-left {  
+      .content-container {
+        .blog-left {
           // border: 1px solid red;
           min-height: 28rem;
           width: 100%;
           margin-right: 1rem;
-          .circle_1 { 
+          .circle_1 {
             width: 11rem;
-            height: 11rem; 
+            height: 11rem;
             top: 10%;
           }
           .circle_2 {
             width: 9rem;
             height: 9rem;
-            top: 0 !important;  
+            top: 0 !important;
           }
           .circle_3 {
-            
             width: 8rem;
             height: 8rem;
             top: 75%;
@@ -134,6 +133,8 @@
           width: 100%;
           .circle-up {
             .circle-right {
+              width: 10rem !important;
+              height: 10rem !important;
               margin-bottom: 0rem;
             }
           }
@@ -146,9 +147,9 @@
 @include media-md {
   .container {
     .blog-container {
-      .content-container { 
-        .blog-left { 
-          .circle_1 { 
+      .content-container {
+        .blog-left {
+          .circle_1 {
             // top: 2rem !important;
             left: 1rem !important;
           }
@@ -169,8 +170,8 @@
           // height: auto;
           // height: 50vh;
           padding: 0;
-          min-height: 40vh; 
-          // width: 80% !important; 
+          min-height: 40vh;
+          // width: 80% !important;
         }
       }
     }
@@ -181,23 +182,23 @@
   .container {
     .blog-container {
       .content-container {
-        .blog-left { 
-          .circle_1 { 
+        .blog-left {
+          .circle_1 {
             left: 10%;
             top: 0;
           }
-          .circle_2 { 
+          .circle_2 {
             top: 8rem;
             left: 57%;
           }
-          .circle_3 { 
+          .circle_3 {
             top: 18rem;
             left: 25%;
           }
         }
         .blog-right {
-          padding: 0 2rem;  
-          .circle-up { 
+          padding: 0 2rem;
+          .circle-up {
             .circle-right {
               width: 12rem;
               height: 12rem;
@@ -205,7 +206,7 @@
               background: $circleBgColor;
               margin-bottom: 2rem;
             }
-          } 
+          }
         }
       }
     }
@@ -228,7 +229,7 @@
           }
           .circle_2 {
             width: 18rem;
-            height: 18rem; 
+            height: 18rem;
           }
           .circle_3 {
             width: 17rem;
