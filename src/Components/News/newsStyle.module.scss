@@ -1,5 +1,6 @@
 @import "../../scss/mixins", "../../scss/variables";
 .container {
+  overflow: hidden;
   margin-bottom: 2%;
   * {
     transition: all 0.2s linear;
