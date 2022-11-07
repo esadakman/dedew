@@ -57,16 +57,12 @@ const faq = [
   {
     id: 11,
     question: "Discord and Slack channels explanation",
-    answer: ` -Level 1 Developer-
-  has right to enter and write whole channels
-  -Level 2 Developer-
-  has right to enter whole channels but just read first level
-  -Level 3 Developer-
-  has right to enter whole channels but just reads the first and second levels
-  -Level 4 Developer-
-  has right to enter whole channels but just reads the first, second and third levels
-  -Level 5 Developer-
-  has right to enter whole channels but just reads the first, second, third and fourth levels
+    answer: `
+  -Level 1 Developer-has right to enter and write whole channels
+  -Level 2 Developer-has right to enter whole channels but just read first level
+  -Level 3 Developer-has right to enter whole channels but just reads the first and second levels
+  -Level 4 Developer-has right to enter whole channels but just reads the first, second and third levels
+  -Level 5 Developer-has right to enter whole channels but just reads the first, second, third and fourth levels
 
   Software Language 1/2/3/4/5 -members can enter
   `,
@@ -78,12 +74,12 @@ function Learn() {
       <header className={learnStyle.header}>
         <h2>LEARN</h2>
       </header>
-      <Carousel className={learnStyle.container}>
+      <Carousel className={learnStyle.container} interval={null}>
         {faq.map((item) => (
           <Carousel.Item key={item.id} className={learnStyle.item}>
             <div className={learnStyle.itemContainer}>
               <div className={learnStyle.question}>
-                <h1>{item.question}</h1>
+                <h2>{item.question}</h2>
               </div>
               <div className={learnStyle.answer}>
                 <h4>{item.answer}</h4>
