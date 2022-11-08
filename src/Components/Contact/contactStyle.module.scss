@@ -1,6 +1,6 @@
 @import "../../scss/mixins", "../../scss/variables";
 .container {
-  height: 80vh;
+  height: 40rem;
   h2 {
     font-size: 3rem;
     letter-spacing: 8px;
@@ -11,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   .content {
-    border: 1px solid red;
+    // border: 1px solid red;
 
     height: 70vh;
     display: flex;
@@ -57,14 +57,14 @@
 
 @include media-xl {
   .container {
-    height: 70vh;
+    height: 45rem;
     h2 {
       font-size: 6rem;
     }
     .content {
       // height: 50vh;
-      .links { 
-        font-size: 5rem; 
+      .links {
+        font-size: 5rem;
         #discord {
           padding: 18px 14px;
         }
@@ -107,11 +107,26 @@
       font-size: 2rem;
     }
     // border: 1px solid green;
-    height: 85vh;
+    height: 30rem;
     .content {
       .links {
         width: 17rem;
-        // font-size: 2rem !important;
+        font-size: 2rem;
+        #discord {
+          padding: 15px 12px;
+        }
+        #instagram {
+          padding: 15px 16px;
+        }
+        #linkedin {
+          padding: 16px 15px;
+        }
+        #youtube {
+          padding:15px 14px;
+        }
+        & > i {
+          padding: 1rem;
+        }
       }
     }
   }

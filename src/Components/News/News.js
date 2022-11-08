@@ -5,7 +5,9 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 function News() {
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({
+    threshold:0.4
+  });
   const animationLeft = useAnimation();
   const animationRight = useAnimation();
 

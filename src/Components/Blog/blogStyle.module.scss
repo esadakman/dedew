@@ -93,7 +93,7 @@
           max-width: 45rem;
           color: white;
           text-align: justify;
-          font-size: 1.1rem !important;
+          font-size: 1.5rem !important;
         }
       }
     }
@@ -163,6 +163,13 @@
             left: 25%;
           }
         }
+        .blog-right { 
+          .content { 
+            & > p {
+              font-size: 1rem;
+            }
+          }
+        }
       }
     }
   }
@@ -200,6 +207,11 @@
               height: 11rem; 
               margin-bottom: 1rem;
             }
+            .content { 
+              & > p {
+                font-size: 1.1rem;
+              }
+            }
           }
         }
       }
@@ -214,10 +226,10 @@
     .blog-container {
       .content-container {
         justify-content: center;
-        // height: 80vh;
+        // height: 20rem;
         .blog-left {
-          // border: 1px solid red; 
-          height: 60vh;
+          border: 1px solid red; 
+          height: 23rem;
           width: 400px;  
           .circle_1 {
             width: 11rem;
