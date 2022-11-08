@@ -10,12 +10,12 @@ import BackToTopButton from "../Components/BackToTop/BackToTopButton";
 import Fullpage, {
   FullPageSections,
   FullpageSection,
-  FullpageNavigation,
+  // FullpageNavigation,
 } from "@ap.cx/react-fullpage";
 import { useEffect, useState } from "react";
 
 const Home = () => {
-  const [fullPage, setFullPage] = useState(false);
+  // const [fullPage, setFullPage] = useState(false);
   // const handleResize = () => {
   //   if (window.innerWidth < 760) {
   //     setFullPage(false);
@@ -41,34 +41,33 @@ const Home = () => {
     return size;
   }
   const width = useWindowSize();
-  
   // console.log(width);
   return (
     <>
       <Header />
       {width > 760 ? (
         <Fullpage>
-          <FullpageNavigation />
+          {/* <FullpageNavigation /> */}
           <FullPageSections>
             <FullpageSection>
               <Section />
             </FullpageSection>
-            <FullpageSection>
+            <FullpageSection style={{ paddingTop: "2rem" }}>
               <Blog />
             </FullpageSection>
-            <FullpageSection>
+            <FullpageSection style={{ paddingTop: "4rem" }}>
               <News />
             </FullpageSection>
-            <FullpageSection>
+            <FullpageSection style={{ paddingTop: "4rem", }}>
               <Learn />
             </FullpageSection>
-            <FullpageSection>
+            <FullpageSection style={{ paddingTop: "4rem" }}>
               <Roadmap />
             </FullpageSection>
-            <FullpageSection>
+            <FullpageSection style={{ paddingTop: "2rem" }}>
               <Team />
             </FullpageSection>
-            <FullpageSection>
+            <FullpageSection style={{ paddingTop: "4rem" }}>
               <Contact />
             </FullpageSection>
           </FullPageSections>
@@ -85,14 +84,6 @@ const Home = () => {
           <Contact />
         </>
       )}
-      {/* <Header />
-      <Section />
-      <Blog />
-      <News />
-      <Learn />
-      <Roadmap />
-      <Team />
-      <Contact /> */}
 
       <BackToTopButton />
     </>

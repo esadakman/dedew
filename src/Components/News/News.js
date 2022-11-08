@@ -6,7 +6,7 @@ import { useEffect } from "react";
 
 function News() {
   const { ref, inView } = useInView({
-    threshold:0.4
+    threshold:0.2
   });
   const animationLeft = useAnimation();
   const animationRight = useAnimation();
@@ -49,7 +49,7 @@ function News() {
   return (
     <section ref={ref} id="news">
       <div className={newsStyle["container"]}>
-        <div className="text-center pt-5 text-light">
+        <div className={newsStyle.header}>
           <h2>NEWS</h2>
         </div>
         <motion.div className={newsStyle["content"]}>

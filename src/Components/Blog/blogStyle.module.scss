@@ -2,6 +2,7 @@
 
 .container {
   min-height: 100vh;
+  // padding-top: 2rem;
   width: 100vw;
   h2 {
     font-size: 3rem;
@@ -93,7 +94,7 @@
           max-width: 45rem;
           color: white;
           text-align: justify;
-          font-size: 1.5rem !important;
+          font-size: 1.3rem !important;
         }
       }
     }
@@ -101,13 +102,16 @@
 }
 @include media-xl {
   .container {
-    height: 90vh;
+    height: 100vh;
     h2 {
       font-size: 6rem;
     }
+    padding-top: 5rem;
     .blog-container {
       .content-container {
+        border: 1px solid red;
         .blog-left {
+          // justify-content: center;
           // margin: 0 1rem;
           .circle_1 {
             width: 22rem;
@@ -127,6 +131,7 @@
         }
         .blog-right {
           align-items: flex-start;
+
           .circle-up {
             height: 40%;
             .circle-right {
@@ -163,8 +168,8 @@
             left: 25%;
           }
         }
-        .blog-right { 
-          .content { 
+        .blog-right {
+          .content {
             & > p {
               font-size: 1rem;
             }
@@ -176,38 +181,44 @@
 }
 @include media-md {
   .container {
+    padding-top: 0;
+    header {
+      & > h2 {
+        font-size: 2rem;
+      }
+    }
     .blog-container {
       .content-container {
         .blog-left {
           .circle_1 {
             // top: 2rem !important;
-            left: 1rem ;
+            left: 1rem;
             width: 12rem;
             height: 12rem;
           }
           .circle_2 {
             width: 10rem;
             height: 10rem;
-            top: 8rem ;
-            left: 55% ;
+            top: 8rem;
+            left: 55%;
           }
           .circle_3 {
             width: 9rem;
             height: 9rem;
             top: 16rem;
-            left: 17% ;
+            left: 17%;
           }
         }
         .blog-right {
-          .circle-up { 
+          .circle-up {
             height: auto;
             // width: 100%;
             .circle-right {
               width: 11rem;
-              height: 11rem; 
+              height: 11rem;
               margin-bottom: 1rem;
             }
-            .content { 
+            .content {
               & > p {
                 font-size: 1.1rem;
               }
@@ -220,34 +231,33 @@
 }
 @include media-sm {
   .container {
-    & > h2 {
-      font-size: 2rem;
-    }
     .blog-container {
       .content-container {
         justify-content: center;
         // height: 20rem;
         .blog-left {
-          border: 1px solid red; 
+          // border: 1px solid red;
           height: 23rem;
-          width: 400px;  
+          width: 400px;
           .circle_1 {
             width: 11rem;
-            height: 11rem; 
+            height: 11rem;
           }
           .circle_2 {
             width: 9rem;
-            height: 9rem; 
+            height: 9rem;
           }
           .circle_3 {
             width: 8rem;
-            height: 8rem; 
+            height: 8rem;
             top: 15rem;
           }
         }
-        .blog-right { 
-          margin-top: 1rem; 
-          width:95%; 
+        .blog-right {
+          // border: 1px solid red;
+          width: 400px;
+          margin-top: 1rem;
+          // width: 95%;
         }
       }
     }

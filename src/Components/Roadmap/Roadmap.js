@@ -5,7 +5,7 @@ import roadMapStyle from "./roadMapStyle.module.scss";
 const Roadmap = () => {
   return (
     <div className={roadMapStyle["container"]} id="roadmap">
-      <div className="text-center pt-5 text-light ">
+      <div className={roadMapStyle.header}>
         <h2>ROAD MAP</h2>
       </div>
       <div className={roadMapStyle["backgroundContainer"]}>

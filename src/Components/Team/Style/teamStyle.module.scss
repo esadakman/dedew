@@ -1,6 +1,8 @@
 @import "../../../scss/mixins", "../../../scss/variables";
 
 .container {
+  // height: 100vh;
+
   .header {
     & > h2 {
       padding-top: 3rem;
@@ -35,7 +37,7 @@
     }
     .wrapper {
       width: 100%;
-      height: 100%;
+      height: 90%;
       // background-color: aqua;
       display: flex;
       flex-direction: column;
@@ -94,6 +96,7 @@
 }
 @include media-xl {
   .container {
+    padding-top: 6rem;
     .header {
       & > h2 {
         font-size: 6rem !important;
@@ -153,9 +156,17 @@
 }
 @include media-md {
   .container {
+    .header {
+      & > h2 {
+        font-size: 2rem !important;
+        letter-spacing: 3px;
+      }
+    }
     .section {
       height: 50vh;
       .wrapper {
+      height: 100%;
+
         .carousel {
           // border: 1px solid red;
           height: 70%;
@@ -173,12 +184,7 @@
 }
 @include media-sm {
   .container {
-    .header {
-      & > h2 {
-        font-size: 2rem !important;
-        letter-spacing: 3px;
-      }
-    }
+    
     .section {
       .wrapper {
         height: 50vh;
