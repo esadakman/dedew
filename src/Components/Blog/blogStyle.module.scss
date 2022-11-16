@@ -104,12 +104,12 @@
   .container {
     height: 100vh;
     h2 {
-      font-size: 6rem;
+      font-size: 4rem;
     }
-    padding-top: 5rem;
+    // padding-top: 5rem;
     .blog-container {
       .content-container {
-        border: 1px solid red;
+        // border: 1px solid red;
         .blog-left {
           // justify-content: center;
           // margin: 0 1rem;
@@ -135,8 +135,8 @@
           .circle-up {
             height: 40%;
             .circle-right {
-              width: 22rem;
-              height: 22rem;
+              width: 20rem;
+              height: 20rem;
             }
           }
           .content {

@@ -38,19 +38,19 @@
     }
   }
 }
-@include media-xl {
+@include media-xxl {
   .header {
-    position: relative;
-    & > img {
-      padding-top: 20rem;  
-      height: 120vh; 
-    }
+    // position: relative;
+    // & > img {
+    //   padding-top: 20rem;  
+    //   height: 120vh; 
+    // }
     .btn-container {
-      gap: 5rem;
+      gap: 3rem;
       .header-button {
-        font-size: 3rem; 
-        min-width: 25rem;
-        padding: .2rem 4rem;
+        font-size:2rem; 
+        min-width: 23rem;
+        padding: .1rem 2rem;
       }
     }
   }

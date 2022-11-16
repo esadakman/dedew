@@ -10,7 +10,7 @@ import BackToTopButton from "../Components/BackToTop/BackToTopButton";
 import Fullpage, {
   FullPageSections,
   FullpageSection,
-  // FullpageNavigation,
+  FullpageNavigation,
 } from "@ap.cx/react-fullpage";
 import { useEffect, useState } from "react";
 
@@ -47,7 +47,7 @@ const Home = () => {
       <Header />
       {width > 760 ? (
         <Fullpage>
-          {/* <FullpageNavigation /> */}
+          <FullpageNavigation style={{ backgroundColor:'#3b3b3b65', width:'1.7rem',  }} />
           <FullPageSections>
             <FullpageSection>
               <Section />
@@ -82,10 +82,10 @@ const Home = () => {
           <Roadmap />
           <Team />
           <Contact />
+          <BackToTopButton />
         </>
       )}
 
-      <BackToTopButton />
     </>
   );
 };

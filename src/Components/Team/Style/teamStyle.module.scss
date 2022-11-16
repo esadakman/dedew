@@ -96,10 +96,11 @@
 }
 @include media-xl {
   .container {
-    padding-top: 6rem;
+    height: 100vh;
+    // padding-top: 6rem;
     .header {
       & > h2 {
-        font-size: 6rem !important;
+        font-size: 4rem !important;
       }
     }
     .section { 
@@ -108,7 +109,7 @@
           .container {
             .card {
               .imgs {
-                max-height: 60vh;
+                max-height: 50vh;
               }
             }
           }
@@ -116,12 +117,12 @@
         .article {
           & > h2,
           h3 {
-            font-size: 4rem;
+            font-size: 3rem;
           }
           .links {
             & > i {
               padding: 1rem !important;
-              font-size: 4rem;
+              font-size: 3rem;
             }
           }
         }
@@ -163,7 +164,7 @@
       }
     }
     .section {
-      height: 50vh;
+      height: 70vh;
       .wrapper {
       height: 100%;
 
@@ -186,6 +187,7 @@
   .container {
     
     .section {
+      height: 50vh;
       .wrapper {
         height: 50vh;
         .carousel {

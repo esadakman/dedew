@@ -1,6 +1,6 @@
 @import "../../scss/mixins", "../../scss/variables";
 .container {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   overflow: hidden;
   margin-bottom: 2%;
@@ -54,9 +54,9 @@
 }
 @include media-xl {
   .container {
-    padding-top: 5rem;
+    // height: 90vh;  
     h2 {
-      font-size: 6rem;
+      font-size: 4rem !important;
       margin: 0;
     }
     .content {
@@ -67,14 +67,14 @@
         // font-weight: lighter;
         padding: 0 1rem;
         & > p {
-          font-size: 3rem; 
+          font-size: 2rem; 
           max-width: 60rem; 
         }
       }
       .imageDiv {
         margin-right: 0;
         & > img {
-          width: 60rem;
+          width: 40rem;
         }
       }
     }

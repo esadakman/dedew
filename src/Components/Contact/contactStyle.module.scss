@@ -58,9 +58,9 @@
 @include media-xl {
   .container {
     height: 100vh;
-    padding-top: 5rem;
+    // padding-top: 5rem;
     h2 {
-      font-size: 6rem;
+      font-size: 4rem;
     }
     .content {
       // height: 50vh;
@@ -92,6 +92,9 @@
 @include media-md {
   .container {
     height: auto;
+    h2 {
+      font-size: 2rem; 
+    }
     .content {
       .links {
         max-width: 100%;

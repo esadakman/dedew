@@ -57,24 +57,24 @@
 @include media-xl {
   .section {
     height: 90vh;
-    padding-top: 5rem;
+    // padding-top: 5rem;
     .header {
       & > h2 {
-        font-size: 6rem;
+        font-size: 4rem;
       }
     }
     .container {
       .item {
         .itemContainer {
           .question {
-            height: 24.5rem;
+            height: 17em;
             & > h2 {
-              font-size:5rem;
+              font-size:3rem;
             }
           }
           .answer {
             & > h4 {
-              font-size: 3rem;
+              font-size: 2rem;
               line-height: normal;
             }
           }

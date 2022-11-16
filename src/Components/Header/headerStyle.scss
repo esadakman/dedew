@@ -32,7 +32,7 @@
     color: white; 
     transition: all .3s linear;
     &:active {
-      background-color: rgba(128, 128, 128, 0.494) !important;
+      background-color: rgba(128, 128, 128, 0.494) !important; 
     }
     &:hover {
       // transition: all .3s linear;
@@ -89,19 +89,19 @@
 }
 @include media-xl {
   .navbar-boot {
-    font-size: 2rem;
+    font-size: 1.5rem;
     .navbar-toggler {
       color: white;
     }
-    img {
-      width: 10rem;
-    }
+    // img {
+    //   width: 10rem;
+    // }
     .nav-link {
       color: white !important;
     }
     .wallet {
       text-align: left;
-      // width: 23rem;
+      width: 15rem;
     }
   }
 }
