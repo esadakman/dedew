@@ -7,26 +7,9 @@ import Learn from "../Components/Learn FAQ/Learn";
 import Roadmap from "../Components/Roadmap/Roadmap";
 import Team from "../Components/Team/Team";
 import BackToTopButton from "../Components/BackToTop/BackToTopButton";
-import Fullpage, {
-  FullPageSections,
-  FullpageSection,
-  FullpageNavigation,
-} from "@ap.cx/react-fullpage";
 import { useEffect, useState } from "react";
-
+import "./homeStyle.scss";
 const Home = () => {
-  // const [fullPage, setFullPage] = useState(false);
-  // const handleResize = () => {
-  //   if (window.innerWidth < 760) {
-  //     setFullPage(false);
-  //   } else {
-  //     setFullPage(true);
-  //   }
-  // };
-  // useEffect(() => {
-  //   window.addEventListener("resize", handleResize);
-  // });
-
   function useWindowSize() {
     const [size, setSize] = useState([window.innerWidth]);
     useEffect(() => {
@@ -41,39 +24,10 @@ const Home = () => {
     return size;
   }
   const width = useWindowSize();
-  // console.log(width);
   return (
     <>
-      <Header />
-      {width > 760 ? (
-        <Fullpage>
-          <FullpageNavigation style={{ backgroundColor:'#3b3b3b65', width:'1.7rem',  }} />
-          <FullPageSections>
-            <FullpageSection>
-              <Section />
-            </FullpageSection>
-            <FullpageSection style={{ paddingTop: "2rem" }}>
-              <Blog />
-            </FullpageSection>
-            <FullpageSection style={{ paddingTop: "4rem" }}>
-              <News />
-            </FullpageSection>
-            <FullpageSection style={{ paddingTop: "4rem", }}>
-              <Learn />
-            </FullpageSection>
-            <FullpageSection style={{ paddingTop: "4rem" }}>
-              <Roadmap />
-            </FullpageSection>
-            <FullpageSection style={{ paddingTop: "2rem" }}>
-              <Team />
-            </FullpageSection>
-            <FullpageSection style={{ paddingTop: "4rem" }}>
-              <Contact />
-            </FullpageSection>
-          </FullPageSections>
-        </Fullpage>
-      ) : (
-        <>
+      <>
+        <div className="homeContainer">
           <Header />
           <Section />
           <Blog />
@@ -82,12 +36,36 @@ const Home = () => {
           <Roadmap />
           <Team />
           <Contact />
-          <BackToTopButton />
-        </>
-      )}
+        </div>
 
+        <BackToTopButton />
+      </>
     </>
   );
 };
 
 export default Home;
+
+// {width > 760 ? (
+//   <div className="homeContainer">
+//     <Section />
+//     <Blog />
+//     <News />
+//     <Learn />
+//     <Roadmap />
+//     <Team />
+//     <Contact />
+//   </div>
+// ) : (
+//   <>
+//     <Header />
+//     <Section />
+//     <Blog />
+//     <News />
+//     <Learn />
+//     <Roadmap />
+//     <Team />
+//     <Contact />
+//     {/* <BackToTopButton /> */}
+//   </>
+// )}

@@ -1,5 +1,7 @@
 @import "../../scss/mixins", "../../scss/variables";
 .container {
+  scroll-snap-align: start;
+  scroll-margin-top: 4rem;
   height: 90vh;
   width: 100%;
   overflow: hidden;

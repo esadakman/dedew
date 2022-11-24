@@ -2,7 +2,9 @@
 
 .container {
   min-height: 100vh;
-  // padding-top: 2rem;
+  scroll-snap-align: start;
+  scroll-margin-top: 3rem;
+
   width: 100vw;
   h2 {
     font-size: 3rem;
@@ -154,6 +156,8 @@
 }
 @include media-lg {
   .container {
+    min-height: 40rem;
+
     .blog-container {
       .content-container {
         .blog-left {
@@ -181,6 +185,7 @@
 }
 @include media-md {
   .container {
+    min-height: 37rem;
     padding-top: 0;
     header {
       & > h2 {

@@ -1,6 +1,9 @@
 @import "../../scss/mixins", "../../scss/variables";
 .container {
   height: 40rem;
+  scroll-snap-align: start;
+  scroll-margin-top: 3rem;
+
   h2 {
     font-size: 3rem;
     letter-spacing: 8px;

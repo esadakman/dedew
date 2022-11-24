@@ -1,13 +1,15 @@
 @import "../../scss/mixins", "../../scss/variables";
-.container {
-  //   border: 1px solid red;
+.container { 
+  scroll-snap-align: start;
+  scroll-margin-top: 3rem;
   * {
     transition: all 0.2s linear;
   }
-  height: 80vh;
+  height: 90vh;
   overflow: hidden;
-  .header{
+  .header {
     padding-top: 2rem;
+
     h2 {
       font-family: $glacial-indiffrence;
       letter-spacing: 8px;
@@ -131,7 +133,7 @@
 @include desktop-lg {
   .container {
     .backgroundContainer {
-      // height: 80vh; 
+      // height: 80vh;
       .backgroundImage {
         // border: 1px solid green;
 
@@ -180,9 +182,9 @@
 
 @include media-md {
   .container {
-    .header{
-      h2 { 
-        font-size: 2rem; 
+    .header {
+      h2 {
+        font-size: 2rem;
       }
     }
     .backgroundContainer {
@@ -288,7 +290,6 @@
 }
 @include media-mobile-m {
   .container {
-    
     .backgroundContainer {
       .backgroundImage {
         // border: 1px solid yellow;

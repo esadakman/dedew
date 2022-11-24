@@ -6,7 +6,7 @@ import { useEffect } from "react";
 
 const Blog = () => {
   const { ref, inView } = useInView({
-    threshold: 0.3,
+    threshold: 0.2,
   });
   const animationLeft = useAnimation();
   const animationRight = useAnimation();
@@ -33,11 +33,11 @@ const Blog = () => {
     if (!inView) {
       animationLeft.start({
         opacity: 0,
-        y: "-100vh",
+        y: "-50vh",
       });
       animationRight.start({
         opacity: 0,
-        y: "100vh",
+        y: "50vh",
       });
     }
     // console.log("use effecthook, inView =", inView);
@@ -45,7 +45,7 @@ const Blog = () => {
   }, [inView]);
 
   return (
-    <section className={blogStyle["container"]} ref={ref}>
+    <section className={blogStyle["container"]} id="blog" ref={ref}>
       <header className="text-center pt-5 text-light">
         <h2>BLOG</h2>
       </header>

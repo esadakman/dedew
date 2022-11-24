@@ -1,6 +1,7 @@
 @import "../../scss/mixins", "../../scss/variables";
 
 .header {
+  scroll-snap-align: start;
   height: 100vh;
   width: 100%;
   display: flex;
